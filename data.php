@@ -156,67 +156,15 @@
                           <th style="width:15%" class="hidden-phone">Actions</th>
                         </tr>
                       </thead>
-                      <tbody>
-                        <tr class="gradeX">
-                          <td>Imam Arief Putrajaya</td>
-                          <td>Tacoma, WA(Washington)</td>
-                          <td class="hidden-phone">0099009900</td>
-                          <td class="hidden-phone">$22590</td>
-                          <td class="hidden-phone">$22590</td>
-                          <td class="hidden-phone">$22590</td>
-                          <td class="hidden-phone">
-                            <a href="#" class="btn btn-success btn-small hidden-phone" data-original-title="">email</a>
-                            <a href="#accSettings1" role="button" class="btn btn-small btn-primary hidden-tablet hidden-phone" data-toggle="modal" data-original-title="">
-                              edit
-                            </a>
-                              <div id="accSettings1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                                  ×
-                                </button>
-                                <h4 id="myModalLabel1">
-                                  Edit client details
-                                </h4>
-                              </div>
-                              <div class="modal-body">
-                                <div class="row-fluid">  
-                                  <div class="span4">
-                                    <input type="text" class="span12" placeholder="Frist name">
-                                  </div>
-                                  <div class="span4">
-                                    <input type="text" class="span12" placeholder="Last name">
-                                  </div>
-                                  <div class="span4">
-                                    <input type="text" class="span12" placeholder="email">
-                                  </div>
-                                </div>
-                                <div class="row-fluid">  
-                                  <div class="span4">
-                                    <input type="text" class="span12" placeholder="Contact">
-                                  </div>
-                                  <div class="span8">
-                                    <input type="text" class="span12" placeholder="Address">
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="modal-footer">
-                                <button class="btn" data-dismiss="modal" aria-hidden="true">
-                                  Close
-                                </button>
-                                <button class="btn btn-primary">
-                                  Save changes
-                                </button>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr class="gradeA">
-                          <td>Prem Pillai</td>
-                          <td>Fresno, CA 93711-1005</td>
-                          <td class="hidden-phone">0006008800</td>
-                          <td class="hidden-phone">$98450</td>
-                          <td class="hidden-phone">$22590</td>
-                          <td class="hidden-phone">$22590</td>
+                      <tbody>                     
+
+<?php
+$dbcikini=new SQLite3('cikini.sq3');$dbcempaka=new SQLite3('cempaka.sq3');$dbgambir=new SQLite3('gambir.sq3');
+$dbkemayoran=new SQLite3('kemayoran.sq3');$dbcideng=new SQLite3('cideng.sq3');
+$sql= "SELECT * FROM LOCATION ";
+$resultcikini=$dbcikini->query($sql);$resultcempaka=$dbcempaka->query($sql);$resultgambir=$dbgambir->query($sql);
+$resultkemayoran=$dbkemayoran->query($sql);$resultcideng=$dbcideng->query($sql);
+$edit='</td>
 
                           <td class="hidden-phone">
                             <a href="#" class="btn btn-success btn-small hidden-phone" data-original-title="">email</a>
@@ -263,144 +211,70 @@
                               </div>
                             </div>
                           </td>
-                        </tr>
-
-<?php
-$dbcikini=new SQLite3(cikini.sq3);
-$dbcempaka=new SQLite3(cempaka.sq3);
-$dbgambir=new SQLite3(gambir.sq3);
-$dbkemayoran=new SQLite3(kemayoran.sq3);
-$dbcideng=new SQLite3(cideng.sq3);
-$sql= "SELECT * FROM LOCATION ";
-$resultcikini=$dbcikini->query($sql);
-$resultcempaka=$dbcempaka->query($sql);
-$resultgambir=$dbgambir->query($sql);
-$resultkemayoran=$dbkemayoran->query($sql);
-$resultcideng=$dbcideng->query($sql);
-
-while ($row = $resultcikini->fetchArray(SQLITE3_ASSOC) or $row = $resultcempaka->fetchArray(SQLITE3_ASSOC) or $row = $resultgambir->fetchArray(SQLITE3_ASSOC) or $row = $resultkemayoran->fetchArray(SQLITE3_ASSOC) or $row = $resultcideng->fetchArray(SQLITE3_ASSOC) ){
+                        </tr>';
+while ($row = $resultcikini->fetchArray(SQLITE3_ASSOC)){
   echo 
 
 '<tr class="gradeA">
-                          <td>'.'$row['kelurahan']'.'</td>
-                          <td>'.'$row['rw']'.'</td>
-                          <td class="hidden-phone">'.'$row['coverage']'.'</td>
-                          <td class="hidden-phone">'.'$row['penduduk']'.'</td>
-                          <td class="hidden-phone">'.'$row['kk']'.'</td>
-                          <td class="hidden-phone">'.'$row['rt']'.'</td>
+                          <td>'.$row['kelurahan'].'</td>
+                          <td>'.$row['rw'].'</td>
+                          <td class="hidden-phone">'.$row['coverage'].'</td>
+                          <td class="hidden-phone">'.$row['penduduk'].'</td>
+                          <td class="hidden-phone">'.$row['kk'].'</td>
+                          <td class="hidden-phone">'.$row['rt'].$edit;
+}
 
-                          <td class="hidden-phone">
-                            <a href="#" class="btn btn-success btn-small hidden-phone" data-original-title="">email</a>
-                            <a href="#accSettings2" role="button" class="btn btn-small btn-primary hidden-tablet hidden-phone" data-toggle="modal" data-original-title="">
-                              edit
-                            </a>
-                              <div id="accSettings2" class="modal hide fade" tabindex="-2" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                                  ×
-                                </button>
-                                <h4 id="myModalLabel2">
-                                  Edit client details
-                                </h4>
-                              </div>
-                              <div class="modal-body">
-                                <div class="row-fluid">  
-                                  <div class="span4">
-                                    <input type="text" class="span12" placeholder="Frist name">
-                                  </div>
-                                  <div class="span4">
-                                    <input type="text" class="span12" placeholder="Last name">
-                                  </div>
-                                  <div class="span4">
-                                    <input type="text" class="span12" placeholder="email">
-                                  </div>
-                                </div>
-                                <div class="row-fluid">  
-                                  <div class="span4">
-                                    <input type="text" class="span12" placeholder="Contact">
-                                  </div>
-                                  <div class="span8">
-                                    <input type="text" class="span12" placeholder="Address">
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="modal-footer">
-                                <button class="btn" data-dismiss="modal" aria-hidden="true">
-                                  Close
-                                </button>
-                                <button class="btn btn-primary">
-                                  Save changes
-                                </button>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-';
+while ($row = $resultcempaka->fetchArray(SQLITE3_ASSOC)){
+  echo 
 
+'<tr class="gradeA">
+                          <td>'.$row['kelurahan'].'</td>
+                          <td>'.$row['rw'].'</td>
+                          <td class="hidden-phone">'.$row['coverage'].'</td>
+                          <td class="hidden-phone">'.$row['penduduk'].'</td>
+                          <td class="hidden-phone">'.$row['kk'].'</td>
+                          <td class="hidden-phone">'.$row['rt'].$edit;
+}
+while ($row = $resultgambir->fetchArray(SQLITE3_ASSOC)){
+  echo 
 
+'<tr class="gradeA">
+                          <td>'.$row['kelurahan'].'</td>
+                          <td>'.$row['rw'].'</td>
+                          <td class="hidden-phone">'.$row['coverage'].'</td>
+                          <td class="hidden-phone">'.$row['penduduk'].'</td>
+                          <td class="hidden-phone">'.$row['kk'].'</td>
+                          <td class="hidden-phone">'.$row['rt'].$edit;
+}
+while ($row = $resultkemayoran->fetchArray(SQLITE3_ASSOC)){
+  echo 
+
+'<tr class="gradeA">
+                          <td>'.$row['kelurahan'].'</td>
+                          <td>'.$row['rw'].'</td>
+                          <td class="hidden-phone">'.$row['coverage'].'</td>
+                          <td class="hidden-phone">'.$row['penduduk'].'</td>
+                          <td class="hidden-phone">'.$row['kk'].'</td>
+                          <td class="hidden-phone">'.$row['rt'].$edit;
+}
+while ($row = $resultcideng->fetchArray(SQLITE3_ASSOC)){
+  echo 
+
+'<tr class="gradeA">
+                          <td>'.$row['kelurahan'].'</td>
+                          <td>'.$row['rw'].'</td>
+                          <td class="hidden-phone">'.$row['coverage'].'</td>
+                          <td class="hidden-phone">'.$row['penduduk'].'</td>
+                          <td class="hidden-phone">'.$row['kk'].'</td>
+                          <td class="hidden-phone">'.$row['rt'].$edit;
 }
 unset($dbcikini);
 unset($dbcempaka);
 unset($dbgambir);
 unset($dbkemayoran);
 unset($dbcideng);
-
-
 ?>                                                
-                        <tr class="gradeA">
-                          <td>Tom Maskerre</td>
-                          <td>Brigade road - Africa</td>
-                          <td class="hidden-phone">1002001000</td>
-                          <td class="hidden-phone">$9992</td>
-                          <td class="hidden-phone">$22590</td>
-                          <td class="hidden-phone">$22590</td>
-
-                          <td class="hidden-phone">
-                            <a href="#" class="btn btn-success btn-small hidden-phone" data-original-title="">email</a>
-                            <a href="#accSettings5" role="button" class="btn btn-small btn-primary hidden-tablet hidden-phone" data-toggle="modal" data-original-title="">
-                              edit
-                            </a>
-                              <div id="accSettings5" class="modal hide fade" tabindex="-5" role="dialog" aria-labelledby="myModalLabel5" aria-hidden="true">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                                  ×
-                                </button>
-                                <h4 id="myModalLabel5">
-                                  Edit client details
-                                </h4>
-                              </div>
-                              <div class="modal-body">
-                                <div class="row-fluid">  
-                                  <div class="span4">
-                                    <input type="text" class="span12" placeholder="Frist name">
-                                  </div>
-                                  <div class="span4">
-                                    <input type="text" class="span12" placeholder="Last name">
-                                  </div>
-                                  <div class="span4">
-                                    <input type="text" class="span12" placeholder="email">
-                                  </div>
-                                </div>
-                                <div class="row-fluid">  
-                                  <div class="span4">
-                                    <input type="text" class="span12" placeholder="Contact">
-                                  </div>
-                                  <div class="span8">
-                                    <input type="text" class="span12" placeholder="Address">
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="modal-footer">
-                                <button class="btn" data-dismiss="modal" aria-hidden="true">
-                                  Close
-                                </button>
-                                <button class="btn btn-primary">
-                                  Save changes
-                                </button>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
+                        
                       </tbody>
                     </table>
                     <div class="clearfix"></div>
