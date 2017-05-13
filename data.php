@@ -20,10 +20,7 @@
   <head>
     <meta charset="utf-8">
     <title>Profil Cluster:Jakarta Pusat</title>
-    <meta name="author" content="Srinu Basava">
     <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
-    <meta name="description" content="Black Label Admin Admin UI">
-    <meta name="keywords" content="Black Label Admin, Admin UI, Admin Dashboard, Srinu Basava">
     <script src="js/html5-trunk.js"></script>
     <link href="icomoon/style.css" rel="stylesheet">
     <!--[if lte IE 7]>
@@ -67,7 +64,7 @@
           </li>
           <li class="active">
             <span class="current-arrow"></span>
-            <a href="data.html">
+            <a href="data.php">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe097;"></span>
               </div>
@@ -109,7 +106,7 @@
                       <a href="index.html">Dashboard</a>
                     </li>
                     <li>
-                      <a href="data.html">Data</a>
+                      <a href="data.php">Data</a>
                     </li>
                     <li>
                       <a href="map.html">Maps</a>
@@ -147,7 +144,8 @@
                     <table class="table table-condensed table-striped table-hover table-bordered pull-left" id="data-table">    
                       <thead>
                         <tr>
-                          <th style="width:20%">Kelurahan</th>
+			  <th style="width:5%">STO</th>
+                          <th style="width:15%">Kelurahan</th>
                           <th style="width:10%">Cluster</th>
                           <th style="width:15%" class="hidden-phone">Coverage Alamat</th>
                           <th style="width:15%" class="hidden-phone">Jumlah Penduduk</th>
@@ -212,22 +210,26 @@ $edit='</td>
                             </div>
                           </td>
                         </tr>';
+$idcikini=array();
 while ($row = $resultcikini->fetchArray(SQLITE3_ASSOC)){
   echo 
 
 '<tr class="gradeA">
+                          <td>'.'CIKINI'.'</td>
                           <td>'.$row['kelurahan'].'</td>
                           <td>'.$row['rw'].'</td>
                           <td class="hidden-phone">'.$row['coverage'].'</td>
                           <td class="hidden-phone">'.$row['penduduk'].'</td>
                           <td class="hidden-phone">'.$row['kk'].'</td>
                           <td class="hidden-phone">'.$row['rt'].$edit;
-}
 
+}
+$idcempaka=array();
 while ($row = $resultcempaka->fetchArray(SQLITE3_ASSOC)){
   echo 
 
 '<tr class="gradeA">
+                          <td>'.'CEMPAKA PUTIH'.'</td>
                           <td>'.$row['kelurahan'].'</td>
                           <td>'.$row['rw'].'</td>
                           <td class="hidden-phone">'.$row['coverage'].'</td>
@@ -235,10 +237,12 @@ while ($row = $resultcempaka->fetchArray(SQLITE3_ASSOC)){
                           <td class="hidden-phone">'.$row['kk'].'</td>
                           <td class="hidden-phone">'.$row['rt'].$edit;
 }
+$idgambir=array();
 while ($row = $resultgambir->fetchArray(SQLITE3_ASSOC)){
   echo 
 
 '<tr class="gradeA">
+                          <td>'.'GAMBIR'.'</td>
                           <td>'.$row['kelurahan'].'</td>
                           <td>'.$row['rw'].'</td>
                           <td class="hidden-phone">'.$row['coverage'].'</td>
@@ -246,10 +250,12 @@ while ($row = $resultgambir->fetchArray(SQLITE3_ASSOC)){
                           <td class="hidden-phone">'.$row['kk'].'</td>
                           <td class="hidden-phone">'.$row['rt'].$edit;
 }
+$idkemayoran=array();
 while ($row = $resultkemayoran->fetchArray(SQLITE3_ASSOC)){
   echo 
 
 '<tr class="gradeA">
+                          <td>'.'STO KEMAYORAN'.'</td>
                           <td>'.$row['kelurahan'].'</td>
                           <td>'.$row['rw'].'</td>
                           <td class="hidden-phone">'.$row['coverage'].'</td>
@@ -257,10 +263,12 @@ while ($row = $resultkemayoran->fetchArray(SQLITE3_ASSOC)){
                           <td class="hidden-phone">'.$row['kk'].'</td>
                           <td class="hidden-phone">'.$row['rt'].$edit;
 }
+$idcideng=array();
 while ($row = $resultcideng->fetchArray(SQLITE3_ASSOC)){
   echo 
 
 '<tr class="gradeA">
+                          <td>'.'STO CIDENG'.'</td>
                           <td>'.$row['kelurahan'].'</td>
                           <td>'.$row['rw'].'</td>
                           <td class="hidden-phone">'.$row['coverage'].'</td>
