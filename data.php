@@ -30,23 +30,14 @@
     <!-- bootstrap css -->
     <link href="css/main.css" rel="stylesheet">
     <link href="css/fullcalendar.css" rel="stylesheet">
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-40301843-2', 'iamsrinu.com');
-      ga('send', 'pageview');
-
-    </script>
+    
   </head>
   <body>
     <header>
-      <a href="index.html" class="logo">Telkom Cluster Data:Jakarta Pusat</a>
+      <a href="index.php" class="logo">Telkom Cluster Data:Jakarta Pusat</a>
       <div id="mini-nav">
         <ul class="hidden-phone">
-          <li><a href="login.html">Logout</a></li>
+          <li><a href="login.php">Logout</a></li>
         </ul>
       </div>
     </header>
@@ -55,7 +46,7 @@
       <div id="mainnav" class="hidden-phone hidden-tablet">
         <ul>
           <li>
-            <a href="index.html">
+            <a href="index.php">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe0a1;"></span>
               </div>
@@ -72,7 +63,7 @@
             </a>
           </li>
           <li>
-            <a href="map.html">
+            <a href="map.php">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe047;"></span>
               </div>
@@ -80,7 +71,7 @@
             </a>
           </li>
           <li>            
-            <a href="login.html">
+            <a href="login.php">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe088;"></span>
               </div>
@@ -103,13 +94,13 @@
                 <div class="nav-collapse collapse navbar-responsive-collapse">
                   <ul class="nav">
                     <li>
-                      <a href="index.html">Dashboard</a>
+                      <a href="index.php">Dashboard</a>
                     </li>
                     <li>
                       <a href="data.php">Data</a>
                     </li>
                     <li>
-                      <a href="map.html">Maps</a>
+                      <a href="map.php">Maps</a>
                     </li>                    
                   </ul>
                 </div>
@@ -121,7 +112,7 @@
             <div class="span12">
               <ul class="breadcrumb-beauty">
                 <li>
-                  <a href="index.html"><span class="fs2" aria-hidden="true" data-icon="&#xe002;"></span> Dashboard</a>
+                  <a href="index.php"><span class="fs2" aria-hidden="true" data-icon="&#xe002;"></span> Dashboard</a>
                 </li>
                 <li>
                   <a href="#">Data</a>

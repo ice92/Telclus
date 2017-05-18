@@ -20,10 +20,8 @@
   <head>
     <meta charset="utf-8">
     <title>Telkom Cluster Data: Jakarta Pusat</title>
-    <meta name="author" content="Srinu Basava">
     <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
-    <meta name="description" content="Black Label Admin Admin UI">
-    <meta name="keywords" content="Black Label Admin, Admin UI, Admin Dashboard, Srinu Basava">
+
     <script src="js/html5-trunk.js"></script>
     <link href="icomoon/style.css" rel="stylesheet">
     <!--[if lte IE 7]>
@@ -33,23 +31,14 @@
     <!-- bootstrap css -->
     <link href="css/main.css" rel="stylesheet">
     <link href="css/fullcalendar.css" rel="stylesheet">
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-40301843-2', 'iamsrinu.com');
-      ga('send', 'pageview');
-
-    </script>
+   
   </head>
   <body>
     <header>
-      <a href="index.html" class="logo">Telkom Cluster Data:Jakarta Pusat</a>
+      <a href="index.php" class="logo">Telkom Cluster Data:Jakarta Pusat</a>
       <div id="mini-nav">
         <ul class="hidden-phone">
-          <li><a href="login.html">Logout</a></li>
+          <li><a href="login.php">Logout</a></li>
         </ul>
       </div>
     </header>
@@ -57,9 +46,9 @@
     <div class="container-fluid">
       <div id="mainnav" class="hidden-phone hidden-tablet">
         <ul>
-          <li class="active">
-            <span class="current-arrow"></span>
-            <a href="index.html">
+          <li >
+            
+            <a href="index.php">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe0a1;"></span>
               </div>
@@ -67,15 +56,16 @@
             </a>
           </li>
           <li>
-            <a href="charts.html">
+            <a href="data.php">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe097;"></span>
               </div>
               Data
             </a>
           </li>
-          <li>
-            <a href="timeline.html">
+          <li class="active">
+              <span class="current-arrow"></span>
+            <a href="map.php">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe047;"></span>
               </div>
@@ -83,7 +73,7 @@
             </a>
           </li>
           <li>            
-            <a href="login.html">
+            <a href="login.php">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe088;"></span>
               </div>
@@ -106,13 +96,13 @@
                 <div class="nav-collapse collapse navbar-responsive-collapse">
                   <ul class="nav">
                     <li>
-                      <a href="index.html">Dashboard</a>
+                      <a href="index.php">Dashboard</a>
                     </li>
                     <li>
-                      <a href="graphs.html">Data</a>
+                        <a href="data.php">Data</a>
                     </li>
                     <li>
-                      <a href="timeline.html">Maps</a>
+                        <a href="map.php">Maps</a>
                     </li>                    
                   </ul>
                 </div>
@@ -124,7 +114,7 @@
             <div class="span12">
               <ul class="breadcrumb-beauty">
                 <li>
-                  <a href="index.html"><span class="fs1" aria-hidden="true" data-icon="&#xe002;"></span> Dashboard</a>
+                  <a href="index.php"><span class="fs1" aria-hidden="true" data-icon="&#xe002;"></span> Dashboard</a>
                 </li>
                 <li>
                   <a href="#">Maps</a>
@@ -132,17 +122,8 @@
               </ul>
             </div>
           </div>
-
-             
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>       
+<iframe src="https://www.google.com/maps/d/embed?mid=1oB_VZP0xCR9LxepXQJL4D6w-oDo" width="640" height="480"></iframe>
+                      
         </div>
       </div><!-- dashboard-container -->
     </div><!-- container-fluid -->

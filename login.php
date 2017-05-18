@@ -20,26 +20,16 @@
   <head>
     <meta charset="utf-8">
     <title>Black Label Admin</title>
-    <meta name="author" content="Srinu Basava">
+
     <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
-    <meta name="description" content="Black Label Admin Admin UI">
-    <meta name="keywords" content="Black Label Admin, Admin UI, Admin Dashboard, Srinu Basava">
+
     <script src="js/html5-trunk.js"></script>
     <link href="icomoon/style.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <!--[if lte IE 7]>
       <script src="css/icomoon-font/lte-ie7.js"></script>
     <![endif]-->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-40301843-2', 'iamsrinu.com');
-      ga('send', 'pageview');
-
-    </script>
+    
   </head>
   <body>
     <div class="container-fluid">
@@ -48,7 +38,7 @@
           <div class="signin">
             <!--//<h1 class="center-align-text">Profil Cluster Jakarta Pusat</h1>-->
             <form action="index.html" class="signin-wrapper" method="post">
-              <img src="img/logotelkom.jpg" alt="logo">
+              <img src="img/logotelkom.png" alt="logo">
               <div class="content">
                 <input class="input input-block-level" placeholder="Username" type="text">
                 <input class="input input-block-level" placeholder="Password" type="password">
