@@ -16,10 +16,14 @@
     <html lang="en">
     <!--
   <![endif]-->
-
+<?php
+session_start();
+?>
+    
+  
   <head>
     <meta charset="utf-8">
-    <title>Black Label Admin</title>
+    <title>Telkom Cluster Data :Jakarta Pusat</title>
 
     <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
 
@@ -32,21 +36,45 @@
     
   </head>
   <body>
+    <?PHP
+        
+        
+        if(isset($_SESSION['username'])){
+                    
+           header('Refresh: 2; URL=index.php');
+           
+        }
+
+        else if($_POST['username']=='admin'&& $_POST['password']=='admin@telkom'){
+            $_SESSION['valid']=true;
+            $_SESSION['timeout']=time();
+            $_SESSION['username']='admin';         
+            
+            header('Refresh: 2; URL=index.php');
+
+                     
+        }
+
+        else{
+            $msg='wrong password/username';          
+        }
+    ?>
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="span4 offset4">
           <div class="signin">
             <!--//<h1 class="center-align-text">Profil Cluster Jakarta Pusat</h1>-->
-            <form action="index.html" class="signin-wrapper" method="post">
+            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" class="signin-wrapper" method="post">
               <img src="img/logotelkom.png" alt="logo">
+              <P class='text-warning center-align-text'><?php if(isset($msg)) echo $msg ;?></p>
               <div class="content">
-                <input class="input input-block-level" placeholder="Username" type="text">
-                <input class="input input-block-level" placeholder="Password" type="password">
+                  <input name="username" class="input input-block-level" placeholder="Username" type="text" required autofocus>
+                <input name="password" class="input input-block-level" placeholder="Password" type="password" required>
               </div>
               <div class="actions">
-                <input class="btn btn-info pull-right" type="submit" value="Login">
+                <input class="btn btn-warning pull-right" type="submit" value="Login">
                 <span class="checkbox-wrapper">
-                  <a href="index.html" class="pull-left">Forgot Password</a>
+                  <a href="check.php" class="pull-left">Forgot Password</a>
                 </span>
                 <div class="clearfix"></div>
               </div>

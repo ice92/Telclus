@@ -1,4 +1,12 @@
+<?PHP        
+        session_start();
+        if(!isset($_SESSION['username'])){          
+          header('Refresh: 2; URL=login.php');
+          exit();
+        } 
+    ?>
 <!DOCTYPE html>
+
   <!--[if lt IE 7]>
     <html class="lt-ie9 lt-ie8 lt-ie7" lang="en">
   <![endif]-->
@@ -37,7 +45,7 @@
       <a href="index.html" class="logo">Telkom Cluster Data:Jakarta Pusat</a>
       <div id="mini-nav">
         <ul class="hidden-phone">
-          <li><a href="login.html">Logout</a></li>
+          <li><a href="check.php">Logout</a></li>
         </ul>
       </div>
     </header>

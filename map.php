@@ -1,4 +1,12 @@
+<?PHP        
+        session_start();
+        if(!isset($_SESSION['username'])){          
+          header('Refresh: 2; URL=login.php');
+          exit();
+        } 
+    ?>
 <!DOCTYPE html>
+
   <!--[if lt IE 7]>
     <html class="lt-ie9 lt-ie8 lt-ie7" lang="en">
   <![endif]-->
