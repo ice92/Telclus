@@ -45,7 +45,7 @@
       <a href="index.php" class="logo">Telkom Cluster Data:Jakarta Pusat</a>
       <div id="mini-nav">
         <ul class="hidden-phone">
-          <li><a href="login.php">Logout</a></li>
+          <li><a href="check.php">Logout</a></li>
         </ul>
       </div>
     </header>
@@ -79,7 +79,7 @@
             </a>
           </li>
           <li>            
-            <a href="login.php">
+            <a href="check.php">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe088;"></span>
               </div>

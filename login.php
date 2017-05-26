@@ -17,9 +17,13 @@
     <!--
   <![endif]-->
 <?php
+ob_start();
 session_start();
 ?>
-    
+    <?
+   // error_reporting(E_ALL);
+   // ini_set("display_errors", 1);
+?>
   
   <head>
     <meta charset="utf-8">
@@ -44,32 +48,35 @@ session_start();
            header('Refresh: 2; URL=index.php');
            
         }
-
-        else if($_POST['username']=='admin'&& $_POST['password']=='admin@telkom'){
+        else if(isset($_POST['username'])){
+          if($_POST['username']=='admin'&& $_POST['password']=='admin@telkom'){
             $_SESSION['valid']=true;
             $_SESSION['timeout']=time();
-            $_SESSION['username']='admin';         
-            
-            header('Refresh: 2; URL=index.php');
+            $_SESSION['username']='admin';            
+            header('Refresh: 2; URL=index.php');                     
+          }
 
-                     
+          else{
+            $msg='wrong password/username';            
+          }
         }
-
         else{
-            $msg='wrong password/username';          
+          $msg='';
         }
+
+        
     ?>
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="span4 offset4">
           <div class="signin">
             <!--//<h1 class="center-align-text">Profil Cluster Jakarta Pusat</h1>-->
-            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" class="signin-wrapper" method="post">
+            <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" class="signin-wrapper" role="form"method="post">
               <img src="img/logotelkom.png" alt="logo">
               <P class='text-warning center-align-text'><?php if(isset($msg)) echo $msg ;?></p>
               <div class="content">
-                  <input name="username" class="input input-block-level" placeholder="Username" type="text" required autofocus>
-                <input name="password" class="input input-block-level" placeholder="Password" type="password" required>
+                  <input name="username" class="input form-control input-block-level" placeholder="Username" type="text" required autofocus>
+                  <input name="password" class="input form-control input-block-level" placeholder="Password" type="password" required>
               </div>
               <div class="actions">
                 <input class="btn btn-warning pull-right" type="submit" value="Login">
