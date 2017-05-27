@@ -135,7 +135,7 @@
               <div class="widget no-margin">
                 <div class="widget-header">
                   <div class="title">
-                    <span class="fs1" aria-hidden="true" data-icon="&#xe14a;"></span> Dynamic Table
+                    <span class="fs1" aria-hidden="true" data-icon="&#xe14a;"></span> Pencarian Dinamis
                   </div>
                 </div>
                 <div class="widget-body">
@@ -143,31 +143,30 @@
                     <table class="table table-condensed table-striped table-hover table-bordered pull-left" id="data-table">    
                       <thead>
                         <tr>
-			  <th style="width:5%">STO</th>
-                          <th style="width:15%">Kelurahan</th>
-                          <th style="width:10%">Cluster</th>
-                          <th style="width:15%" class="hidden-phone">Coverage Alamat</th>
-                          <th style="width:15%" class="hidden-phone">Jumlah Penduduk</th>
-                          <th style="width:15%" class="hidden-phone">Jumlah KK</th>
-                          <th style="width:10%" class="hidden-phone">Jumlah RT</th>
+			                    <th style="width:10%">STO</th>
+                          <th style="width:20%">Cluster</th>
+                          <th style="width:10%">Total Penduduk</th>
+                          <th style="width:8%" class="hidden-phone">Total KK</th>
+                          <th style="width:8%" class="hidden-phone">Total RT</th>
+                          <th style="width:10%" class="hidden-phone">Type Cluster</th>
+                          <th style="width:19%" class="hidden-phone">PIC</th>
                           <th style="width:15%" class="hidden-phone">Actions</th>
                         </tr>
                       </thead>
                       <tbody>                     
 
 <?php
-$dbcikini=new SQLite3('cikini.sq3');$dbcempaka=new SQLite3('cempaka.sq3');$dbgambir=new SQLite3('gambir.sq3');
-$dbkemayoran=new SQLite3('kemayoran.sq3');$dbcideng=new SQLite3('cideng.sq3');
-$sql= "SELECT * FROM LOCATION ";
-$resultcikini=$dbcikini->query($sql);$resultcempaka=$dbcempaka->query($sql);$resultgambir=$dbgambir->query($sql);
-$resultkemayoran=$dbkemayoran->query($sql);$resultcideng=$dbcideng->query($sql);
+$db=new SQLite3('cluster.db');
+$sql= "SELECT * FROM clustel ";
+$result=$db->query($sql);
 $edit='</td>
 
                           <td class="hidden-phone">
-                            <a href="#" class="btn btn-success btn-small hidden-phone" data-original-title="">email</a>
+                            <a href="#" class="btn btn-success btn-small hidden-phone" data-original-title="">detail</a>
                             <a href="#accSettings2" role="button" class="btn btn-small btn-primary hidden-tablet hidden-phone" data-toggle="modal" data-original-title="">
                               edit
                             </a>
+                            <a href="#" class="btn btn-danger btn-small hidden-phone" data-original-title="">delete</a>
                               <div id="accSettings2" class="modal hide fade" tabindex="-2" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
                               <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
@@ -209,77 +208,23 @@ $edit='</td>
                             </div>
                           </td>
                         </tr>';
-$idcikini=array();
-while ($row = $resultcikini->fetchArray(SQLITE3_ASSOC)){
+$idcluster=array();
+while ($row = $result->fetchArray(SQLITE3_ASSOC)){
   echo 
 
 '<tr class="gradeA">
-                          <td>'.'CIKINI'.'</td>
-                          <td>'.$row['kelurahan'].'</td>
-                          <td>'.$row['rw'].'</td>
-                          <td class="hidden-phone">'.$row['coverage'].'</td>
-                          <td class="hidden-phone">'.$row['penduduk'].'</td>
-                          <td class="hidden-phone">'.$row['kk'].'</td>
-                          <td class="hidden-phone">'.$row['rt'].$edit;
+                          <td>'.$row['STO'].'</td>
+                          <td>'.$row['KELURAHAN'].' '.$row['RW'].'</td>
+                          <td>'.$row['JUMLAHPENDUDUK'].'</td>
+                          <td class="hidden-phone">'.$row['JUMLAHKK'].'</td>
+                          <td class="hidden-phone">'.$row['JUMLAHRT'].'</td>
+                          <td class="hidden-phone">'.$row['TIPERUMAH'].'</td>
+                          <td class="hidden-phone">'.$row['PIC'].$edit;
 
 }
-$idcempaka=array();
-while ($row = $resultcempaka->fetchArray(SQLITE3_ASSOC)){
-  echo 
 
-'<tr class="gradeA">
-                          <td>'.'CEMPAKA PUTIH'.'</td>
-                          <td>'.$row['kelurahan'].'</td>
-                          <td>'.$row['rw'].'</td>
-                          <td class="hidden-phone">'.$row['coverage'].'</td>
-                          <td class="hidden-phone">'.$row['penduduk'].'</td>
-                          <td class="hidden-phone">'.$row['kk'].'</td>
-                          <td class="hidden-phone">'.$row['rt'].$edit;
-}
-$idgambir=array();
-while ($row = $resultgambir->fetchArray(SQLITE3_ASSOC)){
-  echo 
+unset($db);
 
-'<tr class="gradeA">
-                          <td>'.'GAMBIR'.'</td>
-                          <td>'.$row['kelurahan'].'</td>
-                          <td>'.$row['rw'].'</td>
-                          <td class="hidden-phone">'.$row['coverage'].'</td>
-                          <td class="hidden-phone">'.$row['penduduk'].'</td>
-                          <td class="hidden-phone">'.$row['kk'].'</td>
-                          <td class="hidden-phone">'.$row['rt'].$edit;
-}
-$idkemayoran=array();
-while ($row = $resultkemayoran->fetchArray(SQLITE3_ASSOC)){
-  echo 
-
-'<tr class="gradeA">
-                          <td>'.'STO KEMAYORAN'.'</td>
-                          <td>'.$row['kelurahan'].'</td>
-                          <td>'.$row['rw'].'</td>
-                          <td class="hidden-phone">'.$row['coverage'].'</td>
-                          <td class="hidden-phone">'.$row['penduduk'].'</td>
-                          <td class="hidden-phone">'.$row['kk'].'</td>
-                          <td class="hidden-phone">'.$row['rt'].$edit;
-}
-$idcideng=array();
-while ($row = $resultcideng->fetchArray(SQLITE3_ASSOC)){
-  echo 
-
-'<tr class="gradeA">
-                          <td>'.'STO CIDENG'.'</td>
-                          <td>'.$row['kelurahan'].'</td>
-                          <td>'.$row['rw'].'</td>
-                          <td class="hidden-phone">'.$row['coverage'].'</td>
-                          <td class="hidden-phone">'.$row['penduduk'].'</td>
-                          <td class="hidden-phone">'.$row['kk'].'</td>
-                          <td class="hidden-phone">'.$row['rt'].$edit;
-}
-unset($dbcikini);
-unset($dbcempaka);
-unset($dbgambir);
-unset($dbkemayoran);
-unset($dbcideng);
 ?>                                                
                         
                       </tbody>
