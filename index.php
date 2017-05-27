@@ -91,6 +91,7 @@
       
       <div class="dashboard-wrapper">
         <div class="main-container">
+
           <div class="navbar hidden-desktop">
             <div class="navbar-inner">
               <div class="container">
@@ -164,153 +165,12 @@
             </div>
           </div>
 
-          <div class="row-fluid">
-            <div class="span6">
-              <div class="plain-header">
-                <h4 class="title">
-                  Current Sales Status
-                </h4>
-              </div>
-              <div class="row-fluid">
-                <div class="span6">
-                  <div class="widget less-bottom-margin widget-border widget-border">
-                    <div class="widget-body">
-                      <div class="current-stats">
-                        <h4 class="text-info">3207</h4>
-                        <p>Recent Orders</p>
-                        <div class="type">
-                          <span class="fs1 arrow text-info" aria-hidden="true" data-icon="&#xe048;"></span> 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="span6">
-                  <div class="widget less-bottom-margin widget-border">
-                    <div class="widget-body">
-                      <div class="current-stats">
-                        <h4 class="text-success">2231</h4>
-                        <p>Shipped</p>
-                        <div class="type">
-                          <span class="fs1 arrow text-success" aria-hidden="true" data-icon="&#xe036;"></span> 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          
 
-              <div class="row-fluid">
-                <div class="span6">
-                  <div class="widget widget-border">
-                    <div class="widget-body">
-                      <div class="current-stats">
-                        <h4 class="text-warning">1198</h4>
-                        <p>Processing</p>
-                        <div class="type">
-                          <span class="fs1 arrow text-warning" aria-hidden="true" data-icon="&#xe077;"></span> 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="span6">
-                  <div class="widget widget-border">
-                    <div class="widget-body">
-                      <div class="current-stats">
-                        <h4>3</h4>
-                        <p>Cancelled</p>
-                        <div class="type">
-                          <span class="fs1 arrow" aria-hidden="true" data-icon="&#xe0fa;"></span> 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="span6">
-              <div class="plain-header">
-                <h4 class="title">
-                  Site Visits
-                </h4>
-              </div>
-              <div class="row-fluid">
-                <div class="span6">
-                  <div class="widget less-bottom-margin widget-border">
-                    <div class="widget-body">
-                      <div class="current-stats">
-                        <h4 class="text-info">11890</h4>
-                        <p>Total Visits</p>
-                        <div class="type">
-                          <span class="fs1 arrow text-info" aria-hidden="true" data-icon="&#xe071;"></span> 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="span6">
-              <div class="widget">
-                <div class="widget-header">
-                  <div class="title">
-                    Social Graph
-                  </div>
-                </div>
-                <div class="widget-body">
-                  <div id="socialGraph" style="height: 160px;"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row-fluid">
-            <div class="span12">
-              <div class="widget">
-                <div class="widget-header">
-                  <div class="title">
-                    <span class="fs1" aria-hidden="true" data-icon="&#xe07d;"></span> Latest Updates
-                  </div>
-                 
-                </div>
-                <div class="widget-body">
-                  <div id="scrollbar-three">
-                    <div class="scrollbar">
-                      <div class="track">
-                        <div class="thumb">
-                          <div class="end"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="viewport">
-                      <div class="overview">
-                        <ul class="imp-messages">
-                          <li>
-                            <img src="img/avatar-5.png" class="avatar" alt="Avatar"/>
-                            <div class="message-date">
-                              <h3 class="date text-success">04</h3>
-                              <p class="month">Feb</p>
-                            </div>
-                            <div class="message-wrapper">
-                              <h4 class="message-heading">Portals enterprise transition dynamic B2C transition.</h4>
-                              <p class="message">
-                                Seamless podcasts transform enable value best-of-breed, enable customized e-enable relationships integrate integrate magnetic authentic syndicate.
-                              </p>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>  </div>    
-          </div>     
-       </div><!-- dashboard-container -->
-    </div><!-- container-fluid -->
+        </div><!-- main container-->
+      </div><!-- dashboard-wrapper -->
     <footer>
-      <p class="copyright">&copy; Black Label Admin 2013</p>
+      <p class="copyright">&copy; Telkom Witel Jakarta Pusat 2017</p>
     </footer>
 
     <script src="js/jquery.min.js"></script>

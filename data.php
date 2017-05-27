@@ -294,7 +294,7 @@ unset($dbcideng);
       </div><!-- dashboard-container -->
     </div><!-- container-fluid -->
     <footer>
-      <p class="copyright">&copy; Black Label Admin 2013</p>
+      <p class="copyright">&copy; Telkom Witel Jakarta Pusat 2017</p>
     </footer>
 
     <script src="js/jquery.min.js"></script>

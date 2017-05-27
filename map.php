@@ -130,13 +130,52 @@
               </ul>
             </div>
           </div>
+
+          </br>
+          
+          <div class="row-fluid">
+            <div class="span12">
+              <div class="row-fluid">
+                <div class="span10">
+                  <div class="widget">
+                    <div class="widget-body">
+                      <div id="selectionCharts" style="height:200px;"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="span2">
+                  <div class="stats-count">
+                    <span class="fs1 arrow text-success hidden-tablet" aria-hidden="true" data-icon="&#xe1bd;"></span> 
+                    <h5 class="stat-value text-success">62%</h5>
+                    <span class="stat-name">Chrome Users</span>
+                  </div>
+                  <div class="stats-count">
+                    <span class="fs1 arrow text-error hidden-tablet" aria-hidden="true" data-icon="&#xe1be;"></span> 
+                    <h5 class="stat-value text-error">21%</h5>
+                    <span class="stat-name">Firefox Users</span>
+                  </div>
+                  <div class="stats-count">
+                    <span class="fs1 arrow text-info hidden-tablet" aria-hidden="true" data-icon="&#xe1c1;"></span> 
+                    <h5 class="stat-value text-info">12%</h5>
+                    <span class="stat-name">Safari Users</span>
+                  </div>
+                  <div class="stats-count">
+                    <span class="fs1 arrow text-warning hidden-tablet" aria-hidden="true" data-icon="&#xe1bf;"></span> 
+                    <h5 class="stat-value text-warning">5%</h5>
+                    <span class="stat-name">IE Users</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
 <iframe src="https://www.google.com/maps/d/embed?mid=1oB_VZP0xCR9LxepXQJL4D6w-oDo" width="640" height="480"></iframe>
                       
-        </div>
+        
       </div><!-- dashboard-container -->
     </div><!-- container-fluid -->
     <footer>
-      <p class="copyright">&copy; Black Label Admin 2013</p>
+      <p class="copyright">&copy; Telkom Witel Jakarta Pusat 2017</p>
     </footer>
 
     <script src="js/jquery.min.js"></script>
