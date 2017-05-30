@@ -5680,7 +5680,7 @@ header {
   #dt_example .dataTables_filter {
     float: left; }
     #dt_example .dataTables_filter input {
-      width: 160px;
+      width: 300px;
       margin-bottom: 0; }
   #dt_example .dataTables_info {
     float: left;
