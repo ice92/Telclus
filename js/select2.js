@@ -1383,7 +1383,7 @@
                 "</a>",
                 "    <div class='select2-drop select2-offscreen'>" ,
                 "   <div class='select2-search'>" ,
-                "       <input type='text' autocomplete='off' class='select2-input'/>" ,
+                "       <input type='text' placeholder='Search Anything' autocomplete='off' class='select2-input'/>" ,
                 "   </div>" ,
                 "   <ul class='select2-results'>" ,
                 "   </ul>" ,

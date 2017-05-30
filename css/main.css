@@ -5672,13 +5672,13 @@ header {
 #dt_example {
   /* Sorting */ }
   #dt_example .dataTables_length {
-    float: left; }
+    float: right; }
     #dt_example .dataTables_length select {
       width: 80px;
       height: 30px;
       margin-bottom: 0; }
   #dt_example .dataTables_filter {
-    float: right; }
+    float: left; }
     #dt_example .dataTables_filter input {
       width: 160px;
       margin-bottom: 0; }

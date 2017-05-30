@@ -31,6 +31,7 @@
     <meta content="width=device-width, initial-scale=1.0, user-scalable=no" name="viewport">
     <script src="js/html5-trunk.js"></script>
     <link href="icomoon/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logosmall.png">
     <!--[if lte IE 7]>
     <script src="css/icomoon-font/lte-ie7.js"></script>
     <![endif]-->

@@ -245,13 +245,59 @@ function socialGraph(){
     formatter: function (x) { return x + "%"}
   });
 }
+function socialGraph1(){
+  Morris.Donut({
+    element: 'socialGraph1',
+    data: [
+      {value: 47, label: 'Facebook'},
+      {value: 28, label: 'Twitter'},
+      {value: 17, label: 'Google+'},
+      {value: 8, label: 'Linkedin'}
+    ],
+    labelColor: '#0b62a4',
+    formatter: function (x) { return x + "%"}
+  });
+}
+function socialGraph2(){
+  Morris.Donut({
+    element: 'socialGraph2',
+    data: [
+      {value: 47, label: 'Facebook'},
+      {value: 28, label: 'Twitter'},
+      {value: 17, label: 'Google+'},
+      {value: 8, label: 'Linkedin'}
+    ],
+    labelColor: '#0b62a4',
+    formatter: function (x) { return x + "%"}
+  });
+}
+function socialGraph3(){
+  Morris.Donut({
+    element: 'socialGraph3',
+    data: [
+      {value: 47, label: 'Facebook'},
+      {value: 28, label: 'Twitter'},
+      {value: 17, label: 'Google+'},
+      {value: 8, label: 'Linkedin'}
+    ],
+    labelColor: '#0b62a4',
+    formatter: function (x) { return x + "%"}
+  });
+}
 $(document).ready(function () {
   socialGraph();
+  socialGraph1();
+  socialGraph2();
+  socialGraph3();
 });
 
 //Resize charts and graphs on window resize
 $(document).ready(function () {
   $(window).resize(function(){
     socialGraph();
+    socialGraph1();
+    socialGraph2();
+    socialGraph3();
+
   });
 });

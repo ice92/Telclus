@@ -32,6 +32,7 @@
 
     <script src="js/html5-trunk.js"></script>
     <link href="icomoon/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logosmall.png">
     <!--[if lte IE 7]>
     <script src="css/icomoon-font/lte-ie7.js"></script>
     <![endif]-->

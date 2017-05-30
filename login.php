@@ -34,6 +34,7 @@ session_start();
     <script src="js/html5-trunk.js"></script>
     <link href="icomoon/style.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logosmall.png">
     <!--[if lte IE 7]>
       <script src="css/icomoon-font/lte-ie7.js"></script>
     <![endif]-->
@@ -79,7 +80,7 @@ session_start();
                   <input name="password" class="input form-control input-block-level" placeholder="Password" type="password" required>
               </div>
               <div class="actions">
-                <input class="btn btn-warning pull-right" type="submit" value="Login">
+                <input class="btn btn-danger pull-right" type="submit" value="Login">
                 <span class="checkbox-wrapper">
                   <a href="check.php" class="pull-left">Forgot Password</a>
                 </span>
