@@ -139,52 +139,83 @@
               <div class="row-fluid">
 
                 <div class="span2">
-                  <div class="stats-count">
-                    <span class="fs1 arrow text-success hidden-tablet" aria-hidden="true" data-icon="&#xe1bd;"></span> 
-                    <h5 class="stat-value text-success">62%</h5>
-                    <span class="stat-name">Chrome Users</span>
+
+                  <div class="widget less-bottom-margin widget-border">
+                    <div class="widget-body">
+                    <a href="map.php?link=17zvrwcqkUhUMR79ZCgWab1vorAs&s=1">
+                      <div class="current-stats">
+                        <h4 class="<?php if($_GET["s"]=='1')echo "text-error";?>">32980</h4>
+                        <p>Page Views</p>
+                        <div class="type">
+                          <span class="fs1 arrow <?php if($_GET["s"]=='1')echo "text-error";?>" aria-hidden="true" data-icon="&#xe0c<?php if($_GET["s"]=='1')echo "6";else echo "7";?>;"></span> 
+                        </div>
+                      </div>
+                      </a>
+                    </div>
                   </div>
-                  <div class="stats-count">
-                    <span class="fs1 arrow text-error hidden-tablet" aria-hidden="true" data-icon="&#xe1be;"></span> 
-                    <h5 class="stat-value text-error">21%</h5>
-                    <span class="stat-name">Firefox Users</span>
+
+                  <div class="widget less-bottom-margin widget-border">
+                    <div class="widget-body">
+                    <a href="map.php?link=1NrlTkV-N_GvPu7tfbi4uj6Fdn18&s=2">
+                      <div class="current-stats">
+                        <h4 class="<?php if($_GET["s"]=='2')echo "text-error";?>">32980</h4>
+                        <p>Page Views</p>
+                        <div class="type">
+                          <span class="fs1 arrow <?php if($_GET["s"]=='2')echo "text-error";?>" aria-hidden="true" data-icon="&#xe0c<?php if($_GET["s"]=='2')echo "6";else echo "7";?>;"></span> 
+                        </div>
+                      </div>
+                      </a>
+                    </div>
                   </div>
-                  <div class="stats-count">
-                    <span class="fs1 arrow text-info hidden-tablet" aria-hidden="true" data-icon="&#xe1c1;"></span> 
-                    <h5 class="stat-value text-info">12%</h5>
-                    <span class="stat-name">Safari Users</span>
+
+                  <div class="widget less-bottom-margin widget-border">
+                    <div class="widget-body">
+                    <a href="map.php?link=1OWkoy8Pn5MVnIdEkSm6tO3BplW4&s=3">
+                      <div class="current-stats">
+                        <h4 class="<?php if($_GET["s"]=='3')echo "text-error";?>">32980</h4>
+                        <p>Page Views</p>
+                        <div class="type">
+                          <span class="fs1 arrow <?php if($_GET["s"]=='3')echo "text-error";?>" aria-hidden="true" data-icon="&#xe0c<?php if($_GET["s"]=='3')echo "6";else echo "7";?>;"></span> 
+                        </div>
+                      </div>
+                      </a>
+                    </div>
                   </div>
-                  <div class="stats-count">
-                    <span class="fs1 arrow text-warning hidden-tablet" aria-hidden="true" data-icon="&#xe1bf;"></span> 
-                    <h5 class="stat-value text-warning">5%</h5>
-                    <span class="stat-name">IE Users</span>
-                  </div>                  
-                  <div class="stats-count">
-                    <span class="fs1 arrow text-success hidden-tablet" aria-hidden="true" data-icon="&#xe1bd;"></span> 
-                    <h5 class="stat-value text-success">62%</h5>
-                    <span class="stat-name">Chrome Users</span>
+
+                  <div class="widget less-bottom-margin widget-border">
+                    <div class="widget-body">
+                    <a href="map.php?link=1NyIiRLZj9X240oAhlen0iUZTkHo&s=4">
+                      <div class="current-stats">
+                        <h4 class="<?php if($_GET["s"]=='4')echo "text-error";?>">32980</h4>
+                        <p>Page Views</p>
+                        <div class="type">
+                          <span class="fs1 arrow <?php if($_GET["s"]=='4')echo "text-error";?>" aria-hidden="true" data-icon="&#xe0c<?php if($_GET["s"]=='4')echo "6";else echo "7";?>;"></span> 
+                        </div>
+                      </div>
+                      </a>
+                    </div>
                   </div>
-                  <div class="stats-count">
-                    <span class="fs1 arrow text-error hidden-tablet" aria-hidden="true" data-icon="&#xe1be;"></span> 
-                    <h5 class="stat-value text-error">21%</h5>
-                    <span class="stat-name">Firefox Users</span>
+
+                  <div class="widget less-bottom-margin widget-border">
+                    <div class="widget-body">
+                    <a href="map.php?link=1DzYmp1cdIy1j2q008__VviEw3Og&s=5">
+                      <div class="current-stats">
+                        <h4 class="<?php if($_GET["s"]=='5')echo "text-error";?>">32980</h4>
+                        <p>Page Views</p>
+                        <div class="type">
+                          <span class="fs1 arrow <?php if($_GET["s"]=='5')echo "text-error";?>" aria-hidden="true" data-icon="&#xe0c<?php if($_GET["s"]=='5')echo "6";else echo "7";?>;"></span> 
+                        </div>
+                      </div>
+                      </a>
+                    </div>
                   </div>
-                  <div class="stats-count">
-                    <span class="fs1 arrow text-info hidden-tablet" aria-hidden="true" data-icon="&#xe1c1;"></span> 
-                    <h5 class="stat-value text-info">12%</h5>
-                    <span class="stat-name">Safari Users</span>
-                  </div>
-                  <div class="stats-count">
-                    <span class="fs1 arrow text-warning hidden-tablet" aria-hidden="true" data-icon="&#xe1bf;"></span> 
-                    <h5 class="stat-value text-warning">5%</h5>
-                    <span class="stat-name">IE Users</span>
-                  </div>  
+                  
                 </div>
 
                 <div class="span10">
                   <div class="widget">
                     <div class="widget-body">
-                      <iframe src="https://www.google.com/maps/d/embed?mid=1oB_VZP0xCR9LxepXQJL4D6w-oDo" width="100%"height="420"></iframe>
+                      <iframe src="https://www.google.com/maps/d/embed?mid=<?php echo $_GET["link"]?>" width="100%"height="400"></iframe>
                     </div>
                   </div>
                 </div>

@@ -146,28 +146,27 @@
                         <tr>
 			                    <th style="width:10%">STO</th>
                           <th style="width:20%">Cluster</th>
-                          <th style="width:10%">Total Penduduk</th>
-                          <th style="width:8%" class="hidden-phone">Total KK</th>
-                          <th style="width:8%" class="hidden-phone">Total RT</th>
                           <th style="width:10%" class="hidden-phone">Type Cluster</th>
-                          <th style="width:19%" class="hidden-phone">PIC</th>
-                          <th style="width:15%" class="hidden-phone">Actions</th>
+                          <th style="width:15%" class="hidden-phone">Kompetitor</th>
+                          <th style="width:18%" class="hidden-phone">Kegiatan Rutin</th>
+                          <th style="width:10%" class="hidden-phone">Occupancy</th>
+                          <th style="width:5%" class="hidden-phone">ODP</th>
+                          <th style="width:12%" >Actions</th>
                         </tr>
                       </thead>
-                      <tbody>                     
-
+                      <tbody class="modal-body">                     
+                      
 <?php
 $db=new SQLite3('cluster.db');
 $sql= "SELECT * FROM clustel ";
 $result=$db->query($sql);
 $edit='</td>
 
-                          <td class="hidden-phone">
-                            <a href="#" class="btn btn-success btn-small hidden-phone" data-original-title="">detail</a>
-                            <a href="#accSettings2" role="button" class="btn btn-small btn-primary hidden-tablet hidden-phone" data-toggle="modal" data-original-title="">
-                              edit
-                            </a>
-                            <a href="#" class="btn btn-danger btn-small hidden-phone" data-original-title="">delete</a>
+                          <td>
+                            
+                                <a href="#accSettings3" data-toggle="modal" class="btn" data-original-title="Detail" href="#"><i class="icon-search"></i></a>
+                                <a href="#accSettings2" data-toggle="modal" class="btn" data-original-title="Edit" href="#"><i class="icon-pencil"></i></a>
+                                <a class="btn delete-row" data-original-title="Delete" href="#"><i class="icon-trash"></i></a>
                               <div id="accSettings2" class="modal hide fade" tabindex="-2" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
                               <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
@@ -207,6 +206,38 @@ $edit='</td>
                                 </button>
                               </div>
                             </div>
+
+                             <div id="accSettings3" class="modal hide fade" tabindex="-2" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                  ×
+                                </button>
+                                <h4 id="myModalLabel3">
+                                  Data keseluruhan
+                                </h4>
+                              </div>
+                              <div class="modal-body">
+                                <div class="row-fluid">  
+                                  <div class="span4">
+                                    <input type="text" class="span12" readonly="readonly" placeholder="Frist name">
+                                  </div>
+                                  <div class="span4">
+                                    <input type="text" class="span12" placeholder="Last name">
+                                  </div>
+                                  <div class="span4">
+                                    <input type="text" class="span12" placeholder="email">
+                                  </div>
+                                </div>
+                                <div class="row-fluid">  
+                                  <div class="span4">
+                                    <input type="text" class="span12" placeholder="Contact">
+                                  </div>
+                                  <div class="span8">
+                                    <input type="text" class="span12" placeholder="Address">
+                                  </div>
+                                </div>
+                              </div>                              
+                            </div>
                           </td>
                         </tr>';
 $idcluster=array();
@@ -216,11 +247,11 @@ while ($row = $result->fetchArray(SQLITE3_ASSOC)){
 '<tr class="gradeA">
                           <td>'.$row['STO'].'</td>
                           <td>'.$row['KELURAHAN'].' '.$row['RW'].'</td>
-                          <td>'.$row['JUMLAHPENDUDUK'].'</td>
-                          <td class="hidden-phone">'.$row['JUMLAHKK'].'</td>
-                          <td class="hidden-phone">'.$row['JUMLAHRT'].'</td>
                           <td class="hidden-phone">'.$row['TIPERUMAH'].'</td>
-                          <td class="hidden-phone">'.$row['PIC'].$edit;
+                          <td class="hidden-phone">'.$row['KOMPETITOR'].'</td>
+                          <td class="hidden-phone">'.$row['KEGIATANRUTIN'].'</td>
+                          <td class="hidden-phone">'.$row['PEKERJAANMAYORITAS'].'</td>
+                          <td class="hidden-phone">'.$row['ODP'].$edit;
 
 }
 
