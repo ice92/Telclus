@@ -72,7 +72,7 @@
             </a>
           </li>
           <li>
-            <a href="map.php">
+            <a href="map.php?link=17zvrwcqkUhUMR79ZCgWab1vorAs&s=1">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe047;"></span>
               </div>
@@ -109,7 +109,7 @@
                       <a href="data.php">Data</a>
                     </li>
                     <li>
-                      <a href="map.php">Maps</a>
+                      <a href="map.php?link=17zvrwcqkUhUMR79ZCgWab1vorAs&s=1">Maps</a>
                     </li>                    
                   </ul>
                 </div>
@@ -136,7 +136,7 @@
               <div class="widget no-margin">
                 <div class="widget-header">
                   <div class="title">
-                    <span class="fs1" aria-hidden="true" data-icon="&#xe14a;"></span> Pencarian Dinamis
+                    <span class="fs1" aria-hidden="true" data-icon="&#xe14a;"></span> Pencarian Tabel Dinamis
                   </div>
                 </div>
                 <div class="widget-body">
@@ -149,8 +149,7 @@
                           <th style="width:10%" class="hidden-phone">Type Cluster</th>
                           <th style="width:15%" class="hidden-phone">Kompetitor</th>
                           <th style="width:18%" class="hidden-phone">Kegiatan Rutin</th>
-                          <th style="width:10%" class="hidden-phone">Occupancy</th>
-                          <th style="width:5%" class="hidden-phone">ODP</th>
+                          <th style="width:15%" class="hidden-phone">Occupancy</th>                          
                           <th style="width:12%" >Actions</th>
                         </tr>
                       </thead>
@@ -160,12 +159,19 @@
 $db=new SQLite3('cluster.db');
 $sql= "SELECT * FROM clustel ";
 $result=$db->query($sql);
-$edit='</td>
-
-                          <td>
-                            
-                                <a href="#accSettings3" data-toggle="modal" class="btn" data-original-title="Detail" href="#"><i class="icon-search"></i></a>
-                                <a href="#accSettings2" data-toggle="modal" class="btn" data-original-title="Edit" href="#"><i class="icon-pencil"></i></a>
+$idcluster=array();
+while ($row = $result->fetchArray(SQLITE3_ASSOC)){
+  echo 
+'<tr class="gradeA">
+                          <td>'.$row['STO'].'</td>
+                          <td>'.$row['KELURAHAN'].' '.$row['RW'].'</td>
+                          <td class="hidden-phone">'.$row['TIPERUMAH'].'</td>
+                          <td class="hidden-phone">'.$row['KOMPETITOR'].'</td>
+                          <td class="hidden-phone">'.$row['KEGIATANRUTIN'].'</td>
+                          <td class="hidden-phone">'.$row['PEKERJAANMAYORITAS'].'</td>'.'</td>
+                          <td>                            
+                                <a href="#accSettings'.$row['NO'].'" data-toggle="modal" class="btn" data-original-title="Detail" href="#"><i class="icon-search"></i></a>
+                                <a href="#accSettings2" data-toggle="modal" class="btn" data-original-title="Insert" href="#"><i class="icon-pencil"></i></a>
                                 <a class="btn delete-row" data-original-title="Delete" href="#"><i class="icon-trash"></i></a>
                               <div id="accSettings2" class="modal hide fade" tabindex="-2" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
                               <div class="modal-header">
@@ -207,51 +213,94 @@ $edit='</td>
                               </div>
                             </div>
 
-                             <div id="accSettings3" class="modal hide fade" tabindex="-2" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+                             <div id="accSettings'.$row['NO'].'" class="modal hide fade" tabindex="-2" role="dialog" aria-labelledby="myModalLabel'.$row['NO'].'" aria-hidden="true">
                               <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                                   ×
                                 </button>
-                                <h4 id="myModalLabel3">
-                                  Data keseluruhan
-                                </h4>
+                                <h3 id="myModalLabel'.$row['NO'].'">
+                                  Profil Cluster </br><h4 class="text-success">'.$row['RW'].' / '.$row['KELURAHAN'].'</br><h5 class="text-error">Kecamatan :'.$row['STO'].'</h5></h4>
+                                </h3>
                               </div>
                               <div class="modal-body">
-                                <div class="row-fluid">  
-                                  <div class="span4">
-                                    <input type="text" class="span12" readonly="readonly" placeholder="Frist name">
-                                  </div>
-                                  <div class="span4">
-                                    <input type="text" class="span12" placeholder="Last name">
-                                  </div>
-                                  <div class="span4">
-                                    <input type="text" class="span12" placeholder="email">
-                                  </div>
-                                </div>
-                                <div class="row-fluid">  
-                                  <div class="span4">
-                                    <input type="text" class="span12" placeholder="Contact">
-                                  </div>
-                                  <div class="span8">
-                                    <input type="text" class="span12" placeholder="Address">
-                                  </div>
-                                </div>
+                                <div class="row-fluid">     
+                                <div class="span5">                           
+                                    <table class="table table-bordered table-striped no-margin">                    
+                                      <tbody>
+                                        <tr>
+                                          <td>Jml RT</td>
+                                          <td colspan="3">'.$row['JUMLAHRT'].'</td>                                          
+                                        </tr>
+                                        <tr>
+                                          <td>Jml KK</td>                                          
+                                          <td colspan="3">'.$row['JUMLAHKK'].'</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Jml Penduduk</td>
+                                          <td colspan="3">'.$row['JUMLAHPENDUDUK'].'</td>                                          
+                                        </tr>
+                                        <tr>
+                                          <td>Profesi</td>                                          
+                                          <td colspan="3">'.$row['PEKERJAANMAYORITAS'].'</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Tipe Rumah</td>
+                                          <td colspan="3">'.$row['TIPERUMAH'].'</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Kegiatan</td>
+                                          <td colspan="3">'.$row['KEGIATANRUTIN'].'</td>
+                                        </tr>
+                                        <tr>
+                                          <td colspan="4">'.$row['KETERANGAN'].'</td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                    </div>
+                                    <div class="span3">                           
+                                    <table class="table table-bordered table-striped no-margin">                    
+                                      <tbody>
+                                        <tr>
+                                          <td>Jml ODP</td>
+                                          <td colspan="3">'.$row['ODP'].'</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Kapasitas</td>                                          
+                                          <td colspan="3">'.$row['KAPASITAS'].'</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Available</td>                                          
+                                          <td colspan="3">'.$row['AVAILABLE'].'</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Occ ODP</td>                                          
+                                          <td colspan="3">0%-20%='.$row['ACCODP0%-20%'].'
+                                                     </br>20%-50%='.$row['ACCODP20%-50%'].'
+                                                     </br>50%-80%='.$row['ACCODP50%-80%'].'
+                                                     </br>80%-100%='.$row['ACCODP80%-100%'].'
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>Kompetitor</td>                                          
+                                          <td colspan="3">'.$row['KOMPETITOR'].'</td>
+                                        </tr>                                        
+                                      </tbody>
+                                    </table>
+                                    </br>                                    
+                                    </div>
+                                    <div class="span4">                           
+                                    <a href="map/'.$row['MAPS'].'" class="thumbnail">
+                                        <img alt="260x180" style="width: 460px; height: 180px;" src="map/'.$row['MAPS'].'">
+                                    </a>
+                                    <a href="foto/'.$row['GAMBAR'].'" class="thumbnail">
+                                        <img alt="260x180" style="width: 460px; height: 180px;"src="foto/'.$row['GAMBAR'].'">
+                                    </a>
+                                  </div>                                 
+                                </div>                                
                               </div>                              
                             </div>
                           </td>
                         </tr>';
-$idcluster=array();
-while ($row = $result->fetchArray(SQLITE3_ASSOC)){
-  echo 
-
-'<tr class="gradeA">
-                          <td>'.$row['STO'].'</td>
-                          <td>'.$row['KELURAHAN'].' '.$row['RW'].'</td>
-                          <td class="hidden-phone">'.$row['TIPERUMAH'].'</td>
-                          <td class="hidden-phone">'.$row['KOMPETITOR'].'</td>
-                          <td class="hidden-phone">'.$row['KEGIATANRUTIN'].'</td>
-                          <td class="hidden-phone">'.$row['PEKERJAANMAYORITAS'].'</td>
-                          <td class="hidden-phone">'.$row['ODP'].$edit;
 
 }
 

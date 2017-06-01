@@ -4035,11 +4035,11 @@ a.thumbnail:hover {
 
 .modal {
   position: fixed;
-  top: 10%;
-  left: 50%;
+  top: 0%;
+  left: 0%;
   z-index: 1050;
   width: 100%;
-  margin-left: -280px;
+  margin-left: 0px;
   background-color: white;
   *border: 1px solid #999999;
   /* IE6-7 */
@@ -4079,7 +4079,8 @@ a.thumbnail:hover {
   position: relative;
   overflow-y: auto;
   max-height: 400px;
-  padding: 15px; }
+  padding: 15px; 
+  margin-right: 0px;}
 
 .modal-form {
   margin-bottom: 0; }

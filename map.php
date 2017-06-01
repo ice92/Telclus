@@ -74,7 +74,7 @@
           </li>
           <li class="active">
               <span class="current-arrow"></span>
-            <a href="map.php">
+            <a href="map.php?link=17zvrwcqkUhUMR79ZCgWab1vorAs&s=1">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe047;"></span>
               </div>
@@ -111,7 +111,7 @@
                         <a href="data.php">Data</a>
                     </li>
                     <li>
-                        <a href="map.php">Maps</a>
+                        <a href="map.php?link=17zvrwcqkUhUMR79ZCgWab1vorAs&s=1">Maps</a>
                     </li>                    
                   </ul>
                 </div>
