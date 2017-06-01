@@ -67,7 +67,7 @@
           <li>
             <a href="data.php">
               <div class="icon">
-                <span class="fs1" aria-hidden="true" data-icon="&#xe097;"></span>
+                <span class="fs1" aria-hidden="true" data-icon="&#xe14a;"></span>
               </div>
               Data
             </a>
@@ -76,7 +76,7 @@
               <span class="current-arrow"></span>
             <a href="map.php?link=17zvrwcqkUhUMR79ZCgWab1vorAs&s=1">
               <div class="icon">
-                <span class="fs1" aria-hidden="true" data-icon="&#xe047;"></span>
+                <span class="fs1" aria-hidden="true" data-icon="&#xe0c2;"></span>
               </div>
               Maps
             </a>
@@ -144,8 +144,7 @@
                     <div class="widget-body">
                     <a href="map.php?link=17zvrwcqkUhUMR79ZCgWab1vorAs&s=1">
                       <div class="current-stats">
-                        <h4 class="<?php if($_GET["s"]=='1')echo "text-error";?>">32980</h4>
-                        <p>Page Views</p>
+                        <h4 class="<?php if($_GET["s"]=='1')echo "text-error";?>">CEMPAKA PUTIH</h4>                        
                         <div class="type">
                           <span class="fs1 arrow <?php if($_GET["s"]=='1')echo "text-error";?>" aria-hidden="true" data-icon="&#xe0c<?php if($_GET["s"]=='1')echo "6";else echo "7";?>;"></span> 
                         </div>
@@ -158,8 +157,8 @@
                     <div class="widget-body">
                     <a href="map.php?link=1NrlTkV-N_GvPu7tfbi4uj6Fdn18&s=2">
                       <div class="current-stats">
-                        <h4 class="<?php if($_GET["s"]=='2')echo "text-error";?>">32980</h4>
-                        <p>Page Views</p>
+                        <h4 class="<?php if($_GET["s"]=='2')echo "text-error";?>">CIDENG</h4>
+                        
                         <div class="type">
                           <span class="fs1 arrow <?php if($_GET["s"]=='2')echo "text-error";?>" aria-hidden="true" data-icon="&#xe0c<?php if($_GET["s"]=='2')echo "6";else echo "7";?>;"></span> 
                         </div>
@@ -172,8 +171,8 @@
                     <div class="widget-body">
                     <a href="map.php?link=1OWkoy8Pn5MVnIdEkSm6tO3BplW4&s=3">
                       <div class="current-stats">
-                        <h4 class="<?php if($_GET["s"]=='3')echo "text-error";?>">32980</h4>
-                        <p>Page Views</p>
+                        <h4 class="<?php if($_GET["s"]=='3')echo "text-error";?>">KEMAYORAN</h4>
+                        
                         <div class="type">
                           <span class="fs1 arrow <?php if($_GET["s"]=='3')echo "text-error";?>" aria-hidden="true" data-icon="&#xe0c<?php if($_GET["s"]=='3')echo "6";else echo "7";?>;"></span> 
                         </div>
@@ -186,8 +185,8 @@
                     <div class="widget-body">
                     <a href="map.php?link=1NyIiRLZj9X240oAhlen0iUZTkHo&s=4">
                       <div class="current-stats">
-                        <h4 class="<?php if($_GET["s"]=='4')echo "text-error";?>">32980</h4>
-                        <p>Page Views</p>
+                        <h4 class="<?php if($_GET["s"]=='4')echo "text-error";?>">GAMBIR</h4>
+                        
                         <div class="type">
                           <span class="fs1 arrow <?php if($_GET["s"]=='4')echo "text-error";?>" aria-hidden="true" data-icon="&#xe0c<?php if($_GET["s"]=='4')echo "6";else echo "7";?>;"></span> 
                         </div>
@@ -200,8 +199,8 @@
                     <div class="widget-body">
                     <a href="map.php?link=1DzYmp1cdIy1j2q008__VviEw3Og&s=5">
                       <div class="current-stats">
-                        <h4 class="<?php if($_GET["s"]=='5')echo "text-error";?>">32980</h4>
-                        <p>Page Views</p>
+                        <h4 class="<?php if($_GET["s"]=='5')echo "text-error";?>">CIKINI</h4>
+                        
                         <div class="type">
                           <span class="fs1 arrow <?php if($_GET["s"]=='5')echo "text-error";?>" aria-hidden="true" data-icon="&#xe0c<?php if($_GET["s"]=='5')echo "6";else echo "7";?>;"></span> 
                         </div>

@@ -4036,9 +4036,9 @@ a.thumbnail:hover {
 .modal {
   position: fixed;
   top: 0%;
-  left: 0%;
+  left: 10%;
   z-index: 1050;
-  width: 100%;
+  width: 80%;
   margin-left: 0px;
   background-color: white;
   *border: 1px solid #999999;

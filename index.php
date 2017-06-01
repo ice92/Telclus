@@ -64,7 +64,7 @@
           <li>
             <a href="data.php">
               <div class="icon">
-                <span class="fs1" aria-hidden="true" data-icon="&#xe097;"></span>
+                <span class="fs1" aria-hidden="true" data-icon="&#xe14a;"></span>
               </div>
               Data
             </a>
@@ -72,7 +72,7 @@
           <li>
             <a href="map.php?link=17zvrwcqkUhUMR79ZCgWab1vorAs&s=1">
               <div class="icon">
-                <span class="fs1" aria-hidden="true" data-icon="&#xe047;"></span>
+                <span class="fs1" aria-hidden="true" data-icon="&#xe0c2;"></span>
               </div>
               Maps
             </a>
@@ -130,314 +130,58 @@
 
           <div class="row-fluid">
 
-            <div class="span3">
+            <div class="span6">
               <div class="widget">
                 <div class="widget-header">
                   <div class="title">
-                    Social Graph
+                    Tipe Cluster
                   </div>
                 </div>
                 <div class="widget-body">
-                  <div id="socialGraph" style="height: 160px;"></div>
+                  <div id="socialGraph" style="height: 320px;"></div>
                 </div>
               </div>
             </div>
-
-            <div class="span3">
+            <div class="span6">
               <div class="widget">
                 <div class="widget-header">
                   <div class="title">
-                    Social Graph
+                    Market Share
                   </div>
                 </div>
                 <div class="widget-body">
-                  <div id="socialGraph1" style="height: 160px;"></div>
+                  <div id="socialGraph1" style="height: 320px;"></div>
                 </div>
               </div>
             </div>
-
-            <div class="span3">
+          </div>
+          <div class="row-fluid">
+            <div class="span6">
               <div class="widget">
                 <div class="widget-header">
                   <div class="title">
-                    Social Graph
+                    Pelanggan
                   </div>
                 </div>
                 <div class="widget-body">
-                  <div id="socialGraph2" style="height: 160px;"></div>
+                  <div id="socialGraph2" style="height: 320x;"></div>
                 </div>
               </div>
             </div>
             
-            <div class="span3">
-              <div class="widget">
-                <div class="widget-header">
-                  <div class="title">
-                    Social Graph
-                  </div>
-                </div>
-                <div class="widget-body">
-                  <div id="socialGraph3" style="height: 160px;"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
- <div class="row-fluid">
-            <div class="span12">
-              <div class="row-fluid">
-                <div class="span10">
-                  <div class="widget">
-                    <div class="widget-body">
-                      <div id="selectionCharts" style="height:200px;"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="span2">
-                  <div class="stats-count">
-                    <span class="fs1 arrow text-success hidden-tablet" aria-hidden="true" data-icon="&#xe1bd;"></span> 
-                    <h5 class="stat-value text-success">62%</h5>
-                    <span class="stat-name">Chrome Users</span>
-                  </div>
-                  <div class="stats-count">
-                    <span class="fs1 arrow text-error hidden-tablet" aria-hidden="true" data-icon="&#xe1be;"></span> 
-                    <h5 class="stat-value text-error">21%</h5>
-                    <span class="stat-name">Firefox Users</span>
-                  </div>
-                  <div class="stats-count">
-                    <span class="fs1 arrow text-info hidden-tablet" aria-hidden="true" data-icon="&#xe1c1;"></span> 
-                    <h5 class="stat-value text-info">12%</h5>
-                    <span class="stat-name">Safari Users</span>
-                  </div>
-                  <div class="stats-count">
-                    <span class="fs1 arrow text-warning hidden-tablet" aria-hidden="true" data-icon="&#xe1bf;"></span> 
-                    <h5 class="stat-value text-warning">5%</h5>
-                    <span class="stat-name">IE Users</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row-fluid">
-            <div class="span6">
-              <div class="plain-header">
-                <h4 class="title">
-                  Current Sales Status
-                </h4>
-              </div>
-              <div class="row-fluid">
-                <div class="span6">
-                  <div class="widget less-bottom-margin widget-border widget-border">
-                    <div class="widget-body">
-                      <div class="current-stats">
-                        <h4 class="text-info">3207</h4>
-                        <p>Recent Orders</p>
-                        <div class="type">
-                          <span class="fs1 arrow text-info" aria-hidden="true" data-icon="&#xe048;"></span> 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="span6">
-                  <div class="widget less-bottom-margin widget-border">
-                    <div class="widget-body">
-                      <div class="current-stats">
-                        <h4 class="text-success">2231</h4>
-                        <p>Shipped</p>
-                        <div class="type">
-                          <span class="fs1 arrow text-success" aria-hidden="true" data-icon="&#xe036;"></span> 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row-fluid">
-                <div class="span6">
-                  <div class="widget widget-border">
-                    <div class="widget-body">
-                      <div class="current-stats">
-                        <h4 class="text-warning">1198</h4>
-                        <p>Processing</p>
-                        <div class="type">
-                          <span class="fs1 arrow text-warning" aria-hidden="true" data-icon="&#xe077;"></span> 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="span6">
-                  <div class="widget widget-border">
-                    <div class="widget-body">
-                      <div class="current-stats">
-                        <h4>3</h4>
-                        <p>Cancelled</p>
-                        <div class="type">
-                          <span class="fs1 arrow" aria-hidden="true" data-icon="&#xe0fa;"></span> 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="span6">
-              <div class="plain-header">
-                <h4 class="title">
-                  Site Visits
-                </h4>
-              </div>
-              <div class="row-fluid">
-                <div class="span6">
-                  <div class="widget less-bottom-margin widget-border">
-                    <div class="widget-body">
-                      <div class="current-stats">
-                        <h4 class="text-info">11890</h4>
-                        <p>Total Visits</p>
-                        <div class="type">
-                          <span class="fs1 arrow text-info" aria-hidden="true" data-icon="&#xe071;"></span> 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="span6">
-                  <div class="widget less-bottom-margin widget-border">
-                    <div class="widget-body">
-                      <div class="current-stats">
-                        <h4 class="text-error">32980</h4>
-                        <p>Page Views</p>
-                        <div class="type">
-                          <span class="fs1 arrow text-error" aria-hidden="true" data-icon="&#xe0c6;"></span> 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row-fluid">
-                <div class="span6">
-                  <div class="widget widget-border">
-                    <div class="widget-body">
-                      <div class="current-stats">
-                        <h4 class="text-warning">19280</h4>
-                        <p>Total Unique Visits</p>
-                        <div class="type">
-                          <span class="fs1 arrow text-warning" aria-hidden="true" data-icon="&#xe070;"></span> 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="span6">
-                  <div class="widget widget-border">
-                    <div class="widget-body">
-                      <div class="current-stats">
-                        <h4 class="text-success">16:05:45</h4>
-                        <p>Total Time Spend</p>
-                        <div class="type">
-                          <span class="fs1 arrow text-success" aria-hidden="true" data-icon="&#xe04d;"></span> 
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="row-fluid">
-            <div class="span6">
-              <div class="widget no-margin">
-                <div class="widget-header">
-                  <div class="title">
-                    <span class="fs1" aria-hidden="true" data-icon="&#xe053;"></span> Upcoming Events
-                  </div>
-                  <div class="tools pull-right">
-                  </div>
-                </div>
-                <div class="widget-body">
-                  <div id='calendar'></div>
-                </div>
-              </div>
-            </div>
-
             <div class="span6">
               <div class="widget">
                 <div class="widget-header">
                   <div class="title">
-                    <span class="fs1" aria-hidden="true" data-icon="&#xe07d;"></span> Latest Updates
-                  </div>
-                  <div class="tools">
-                    <ul class="sliding-tags">
-                      <li>
-                        <a href="#">Recent<span>95</span></a>
-                      </li>
-                      <li>
-                        <a href="#">Important<span>75</span></a>
-                      </li>
-                      <li>
-                        <a href="#">View All<span>275</span></a>
-                      </li>
-                    </ul>
+                    Cluster / Occupancy ODP
                   </div>
                 </div>
                 <div class="widget-body">
-                  <div id="scrollbar-three">
-                    <div class="scrollbar">
-                      <div class="track">
-                        <div class="thumb">
-                          <div class="end"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="viewport">
-                      <div class="overview">
-                        <ul class="imp-messages">
-                          <li>
-                            <img src="img/avatar-6.png" class="avatar" alt="Avatar"/>
-                            <div class="message-date">
-                              <h3 class="date text-info">28</h3>
-                              <p class="month">April</p>
-                            </div>
-                            <div class="message-wrapper">
-                              <h4 class="message-heading">Vertical, systems networks utilize capture seize.</h4>
-                              <p class="message">
-                               Harness e-markets podcasts mindshare, exploit incentivize repurpose strategize, cross-media. 
-                              </p>
-                            </div>
-                          </li>
-                          <li>
-                            <img src="img/avatar-7.png" class="avatar" alt="Avatar"/>
-                            <div class="message-date">
-                              <h3 class="date text-error">25</h3>
-                              <p class="month">April</p>
-                            </div>
-                            <div class="message-wrapper">
-                              <h4 class="message-heading">Value-added; enable enhance revolutionize.</h4>
-                              <p class="message">
-                                Seamless podcasts transform enable value best-of-breed, enable customized e-enable relationships integrate integrate magnetic authentic syndicate.
-                              </p>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+                  <div id="socialGraph3" style="height: px;"></div>
                 </div>
               </div>
             </div>
-
-
           </div>
-
         </div><!-- main container-->
       </div><!-- dashboard-wrapper -->
     <footer>

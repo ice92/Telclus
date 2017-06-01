@@ -66,7 +66,7 @@
             <span class="current-arrow"></span>
             <a href="data.php">
               <div class="icon">
-                <span class="fs1" aria-hidden="true" data-icon="&#xe097;"></span>
+                <span class="fs1" aria-hidden="true" data-icon="&#xe14a;"></span>
               </div>
               Data
             </a>
@@ -74,7 +74,7 @@
           <li>
             <a href="map.php?link=17zvrwcqkUhUMR79ZCgWab1vorAs&s=1">
               <div class="icon">
-                <span class="fs1" aria-hidden="true" data-icon="&#xe047;"></span>
+                <span class="fs1" aria-hidden="true" data-icon="&#xe0c2;"></span>
               </div>
               Maps
             </a>
@@ -250,12 +250,24 @@ while ($row = $result->fetchArray(SQLITE3_ASSOC)){
                                         <tr>
                                           <td>Kegiatan</td>
                                           <td colspan="3">'.$row['KEGIATANRUTIN'].'</td>
-                                        </tr>
-                                        <tr>
-                                          <td colspan="4">'.$row['KETERANGAN'].'</td>
-                                        </tr>
+                                        </tr>                                        
                                       </tbody>
                                     </table>
+                                    <p>Sumber:</p>
+                                    <ol class="no-margin">
+                                      <li>
+                                        Kelurahan Kebon Kacang
+                                      </li>
+                                      <li>
+                                        Wawancara RW
+                                      </li>
+                                      <li>
+                                        ftp://10.65.10.238
+                                      </li>
+                                      <li>
+                                        ftp://10.32.1.211
+                                      </li>                                      
+                                    </ol>
                                     </div>
                                     <div class="span3">                           
                                     <table class="table table-bordered table-striped no-margin">                    
@@ -286,15 +298,53 @@ while ($row = $result->fetchArray(SQLITE3_ASSOC)){
                                         </tr>                                        
                                       </tbody>
                                     </table>
-                                    </br>                                    
+                                    </br> 
+                                    <table class="table table-bordered table-striped no-margin">                    
+                                      <tbody>
+                                        <tr>
+                                          <td>Jml ODP</td>
+                                          <td colspan="3">'.$row['ODP'].'</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Kapasitas</td>                                          
+                                          <td colspan="3">'.$row['KAPASITAS'].'</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Available</td>                                          
+                                          <td colspan="3">'.$row['AVAILABLE'].'</td>
+                                        </tr>
+                                        <tr>
+                                          <td>Occ ODP</td>                                          
+                                          <td colspan="3">0%-20%='.$row['ACCODP0%-20%'].'
+                                                     </br>20%-50%='.$row['ACCODP20%-50%'].'
+                                                     </br>50%-80%='.$row['ACCODP50%-80%'].'
+                                                     </br>80%-100%='.$row['ACCODP80%-100%'].'
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>Kompetitor</td>                                          
+                                          <td colspan="3">'.$row['KOMPETITOR'].'</td>
+                                        </tr>                                        
+                                      </tbody>
+                                    </table>  
+                                    </br>  
+                                    <table class="table table-bordered table-striped no-margin">                    
+                                      <tbody>
+                                        <tr>
+                                          <td>Jml ODP</td>
+                                          <td colspan="3">'.$row['ODP'].'</td>
+                                        </tr>                                                                         
+                                      </tbody>
+                                    </table>                                  
                                     </div>
                                     <div class="span4">                           
                                     <a href="map/'.$row['MAPS'].'" class="thumbnail">
-                                        <img alt="260x180" style="width: 460px; height: 180px;" src="map/'.$row['MAPS'].'">
+                                        <img alt="359x252" style="width: 359px; height: 252px;"src="map/'.$row['MAPS'].'">
                                     </a>
                                     <a href="foto/'.$row['GAMBAR'].'" class="thumbnail">
-                                        <img alt="260x180" style="width: 460px; height: 180px;"src="foto/'.$row['GAMBAR'].'">
+                                        <img alt="359x252" style="width: 359px; height: 252px;"src="foto/'.$row['GAMBAR'].'">
                                     </a>
+                                    <p>'.$row['KETERANGAN'].'</p>
                                   </div>                                 
                                 </div>                                
                               </div>                              
