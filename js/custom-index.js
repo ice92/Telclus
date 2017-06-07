@@ -5,10 +5,10 @@ function socialGraph(){
   Morris.Donut({
     element: 'socialGraph',
     data: [
-      {value: 47, label: 'Bronze'},
-      {value: data1, label: 'Silver'},
-      {value: 17, label: 'Gold'},
-      {value: 8, label: 'Platinum'}
+      {value: data1, label: 'Bronze'},
+      {value: data2, label: 'Silver'},
+      {value: data3, label: 'Gold'},
+      {value: data4, label: 'Platinum'}
     ],
     colors: ['#d4a76b', '#867f79', '#ffbf00', '#b5d9d6'],
     labelColor: '#0b62a4',
@@ -58,11 +58,15 @@ function socialGraph1(){
   });
 }
 
-var data1;
+var data1,data2,data3,data4;
 
-function callback(data){  
-    data1=+data;
-    // alert(data1) ;
+function callback(data){ 
+    data=JSON.parse(data); 
+    data1=+data[0];
+    data2=+data[1];
+    data3=+data[2];
+    data4=+data[3];
+    // alert(data[2]) ;
 }
 
 function aza(data="getdata.php",i=1){

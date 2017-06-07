@@ -1,12 +1,38 @@
 <?php 
 $db=new SQLite3('cluster.db');
-$sql= "SELECT * FROM clustel ";
-$result=$db->query($sql);
-$idcluster=array();
-while ($row = $result->fetchArray(SQLITE3_ASSOC)){
 
-}
-    $final = 15;
+$tsql= "SELECT count(*) FROM clustel";
+$bsql= "SELECT count(*) FROM clustel where TIPERUMAH='Sangat Sederhana'";
+$ssql= "SELECT count(*) FROM clustel where TIPERUMAH='Sederhana'";
+$gsql= "SELECT count(*) FROM clustel where TIPERUMAH='Menengah'";
+$psql= "SELECT count(*) FROM clustel where TIPERUMAH='Mewah'";
+
+
+$result=$db->query($tsql);
+$row = $result->fetchArray(SQLITE3_ASSOC);
+$total = $row["count(*)"];
+
+$result=$db->query($bsql);
+$row = $result->fetchArray(SQLITE3_ASSOC);
+$bronze = round($row["count(*)"]/$total*100,2);
+
+$result=$db->query($ssql);
+$row = $result->fetchArray(SQLITE3_ASSOC);
+$silver = round($row["count(*)"]/$total*100,2);
+
+$result=$db->query($gsql);
+$row = $result->fetchArray(SQLITE3_ASSOC);
+$gold = round($row["count(*)"]/$total*100,2);
+
+$result=$db->query($psql);
+$row = $result->fetchArray(SQLITE3_ASSOC);
+$platinum = round($row["count(*)"]/$total*100,2);
+
+$data=array($bronze,$silver,$gold,$platinum);
+// $bronzesql= "SELECT count(*) FROM clustel where TIPECLUSTER=/"sederhana/" ";
+// $result=$db->query($bronzesql);
+// $row = $result->fetchArray(SQLITE3_ASSOC);
+// $bronze = $row["count(*)"];
     // $final = json_decode($final, true);
     // $new_final = array();
     // // simple flattening
@@ -16,6 +42,6 @@ while ($row = $result->fetchArray(SQLITE3_ASSOC)){
     //     }
     // }
 
-    echo json_encode($final);
+    echo json_encode($data);
     exit;
 ?>
