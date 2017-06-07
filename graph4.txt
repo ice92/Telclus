@@ -1,0 +1,13 @@
+					          <div id="home" class="tab-pane fade active in">
+                      <h3>
+                        GRAFIK CLUSTER / OCCUPANCY ODP
+                      </h3>
+                      <p class="no-margin">
+                        Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.prehenderit butcher retro keffiyeh dreamcatcher synth. Cosby Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure squid.Raw denim you probably haven't heard of them jean shorts Austin.
+                      </p>
+                    </div>
+                    <div id="profile" class="tab-pane fade">
+                      <p>
+                        Menampilkan persentase cluster berdasarkan rata2 occupany ODP di cluster tersebut.
+                      </p>                    
+                    </div>

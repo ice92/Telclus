@@ -142,7 +142,7 @@
 
                   <div class="widget less-bottom-margin widget-border">
                     <div class="widget-body">
-                    <a href="map.php?link=17zvrwcqkUhUMR79ZCgWab1vorAs&s=1">
+                    <a href="map.php?link=1TMp85v2XGO5JF8T4v_gCQYpKXSU&s=1">
                       <div class="current-stats">
                         <h4 class="<?php if($_GET["s"]=='1')echo "text-error";?>">CEMPAKA PUTIH</h4>                        
                         <div class="type">
@@ -183,7 +183,7 @@
 
                   <div class="widget less-bottom-margin widget-border">
                     <div class="widget-body">
-                    <a href="map.php?link=1NyIiRLZj9X240oAhlen0iUZTkHo&s=4">
+                    <a href="map.php?link=1kGw2UcBNhCOhR4-70ji4t2Ac1c8&s=4">
                       <div class="current-stats">
                         <h4 class="<?php if($_GET["s"]=='4')echo "text-error";?>">GAMBIR</h4>
                         

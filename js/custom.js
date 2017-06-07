@@ -1,17 +1,17 @@
 //Timer for messages and tasks
-var i = 12, j=35;
+// var i = 12, j=35;
 
-function incrementI() {
-  i++;  
-  document.getElementById('newSignup').innerHTML = i;
-}
-setInterval('incrementI()', 25000);
+// function incrementI() {
+//   i++;  
+//   document.getElementById('newSignup').innerHTML = i;
+// }
+// setInterval('incrementI()', 25000);
 
-function incrementJ() {
-  j++;
-  document.getElementById('messagesCountDown').innerHTML = j;
-}
-setInterval('incrementJ()', 12000);
+// function incrementJ() {
+//   j++;
+//   document.getElementById('messagesCountDown').innerHTML = j;
+// }
+// setInterval('incrementJ()', 12000);
 
 
 //Tooltip

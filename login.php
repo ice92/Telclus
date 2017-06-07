@@ -81,9 +81,9 @@ session_start();
               </div>
               <div class="actions">
                 <input class="btn btn-danger pull-right" type="submit" value="Login">
-                <span class="checkbox-wrapper">
+              <!--   <span class="checkbox-wrapper">
                   <a href="check.php" class="pull-left">Forgot Password</a>
-                </span>
+                </span> -->
                 <div class="clearfix"></div>
               </div>
             </form>

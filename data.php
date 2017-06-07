@@ -38,7 +38,7 @@
 
     <!-- bootstrap css -->
     <link href="css/main.css" rel="stylesheet">
-    <link href="css/fullcalendar.css" rel="stylesheet">
+    <!-- <link href="css/fullcalendar.css" rel="stylesheet"> -->
     
   </head>
   <body>
@@ -133,13 +133,13 @@
           <br>
           <div class="row-fluid">
             <div class="span12">
-              <div class="widget no-margin">
-                <div class="widget-header">
+              <!-- <div class="widget no-margin"> -->
+                <!-- <div class="widget-header">
                   <div class="title">
                     <span class="fs1" aria-hidden="true" data-icon="&#xe14a;"></span> Pencarian Tabel Dinamis
                   </div>
-                </div>
-                <div class="widget-body">
+                </div> -->
+                <!-- <div class="widget-body"> -->
                   <div id="dt_example" class="example_alt_pagination">
                     <table class="table table-condensed table-striped table-hover table-bordered pull-left" id="data-table">    
                       <thead>
@@ -251,12 +251,16 @@ while ($row = $result->fetchArray(SQLITE3_ASSOC)){
                                           <td>Kegiatan</td>
                                           <td colspan="3">'.$row['KEGIATANRUTIN'].'</td>
                                         </tr>                                        
+                                        <tr>
+                                          <td>Influencer</td>
+                                          <td colspan="3">'.$row['PIC'].'</td>
+                                        </tr>                                        
                                       </tbody>
                                     </table>
                                     <p>Sumber:</p>
                                     <ol class="no-margin">
                                       <li>
-                                        Kelurahan Kebon Kacang
+                                        Kelurahan '.$row['KELURAHAN'].'
                                       </li>
                                       <li>
                                         Wawancara RW
@@ -338,11 +342,11 @@ while ($row = $result->fetchArray(SQLITE3_ASSOC)){
                                     </table>                                  
                                     </div>
                                     <div class="span4">                           
-                                    <a href="map/'.$row['MAPS'].'" class="thumbnail">
-                                        <img alt="359x252" style="width: 359px; height: 252px;"src="map/'.$row['MAPS'].'">
-                                    </a>
-                                    <a href="foto/'.$row['GAMBAR'].'" class="thumbnail">
-                                        <img alt="359x252" style="width: 359px; height: 252px;"src="foto/'.$row['GAMBAR'].'">
+                                   <!-- <a href="maps/'.$row['MAPS'].'" class="thumbnail">
+                                        <img alt="359x252" style="width: 359px; height: 252px;"src="maps/'.$row['MAPS'].'">
+                                    </a>-->
+                                    <a href="photos/'.$row['GAMBAR'].'" class="thumbnail">
+                                        <img alt="359x252" style="width: 359px; height: 252px;"src="photos/'.$row['GAMBAR'].'">
                                     </a>
                                     <p>'.$row['KETERANGAN'].'</p>
                                   </div>                                 
@@ -362,8 +366,8 @@ unset($db);
                     </table>
                     <div class="clearfix"></div>
                   </div>
-                </div>
-              </div>
+                <!-- </div> -->
+              <!-- </div> -->
             </div>
           </div>  
           </div>          

@@ -129,20 +129,76 @@
           <br>
 
           <div class="row-fluid">
-
+            
             <div class="span6">
-              <div class="widget">
+      <!--         <div class="widget">
                 <div class="widget-header">
                   <div class="title">
                     Tipe Cluster
                   </div>
                 </div>
+                <div class="widget-body"> -->                
+                  <div id="socialGraph" style="height: 600px;"></div>
+                <!-- </div>
+              </div> -->
+            </div>
+            <div class="span6">
+              <div class="widget">
+                <div class="widget-header">
+                  <div class="title">
+                    <span class="fs1" aria-hidden="true" data-icon="&#xe13c;"></span> Pilih Grafik
+                  </div>
+                </div>
                 <div class="widget-body">
-                  <div id="socialGraph" style="height: 320px;"></div>
+                  <a class="quick-action-btn span3 input-bottom-margin" onclick="aza('getdata.php',1);">
+                    <span class="fs1" aria-hidden="true" data-icon="&#xe003;"></span> 
+                    <p class="no-margin">Tipe Cluster</p>
+                    
+                  </a>
+                  <a class="quick-action-btn span3 input-bottom-margin" onclick="aza('getdata2.php',2);">
+                    <span class="fs1" aria-hidden="true" data-icon="&#xe1cd;"></span> 
+                    <p class="no-margin">Market Share</p>
+                    
+                  </a>
+                  <a class="quick-action-btn span3 input-bottom-margin" onclick="aza('getdata2.php',3);">
+                    <span class="fs1" aria-hidden="true" data-icon="&#xe071;"></span> 
+                    <p class="no-margin">Pelanggan</p>
+                    
+                  </a>
+                  <a class="quick-action-btn span3 input-bottom-margin" onclick="aza('getdata2.php',4);">
+                    <span class="fs1" aria-hidden="true" data-icon="&#xe01e;"></span> 
+                    <p class="no-margin">Occupancy ODP</p>
+                    
+                  </a>                  
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            <div class="widget">
+                <div class="widget-header">
+                  <div class="title">
+                    <span class="fs1" aria-hidden="true" data-icon="&#xe0b6;"></span> Penjelasan
+                  </div>
+                </div>
+                <div class="widget-body">
+                  <ul class="nav nav-tabs no-margin myTabBeauty">
+                    <li class="active">
+                      <a data-toggle="tab" href="#home">
+                        Legenda
+                      </a>
+                    </li>
+                    <li class="">
+                      <a data-toggle="tab" href="#profile">
+                        Tentang Grafik
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">                  
+                    
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="span6">
+            <!-- <div class="span6">
               <div class="widget">
                 <div class="widget-header">
                   <div class="title">
@@ -153,9 +209,9 @@
                   <div id="socialGraph1" style="height: 320px;"></div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
-          <div class="row-fluid">
+          <!-- <div class="row-fluid">
             <div class="span6">
               <div class="widget">
                 <div class="widget-header">
@@ -181,7 +237,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div><!-- main container-->
       </div><!-- dashboard-wrapper -->
     <footer>
@@ -197,17 +253,18 @@
     <script src="js/morris/raphael-min.js"></script>
 
     <!-- Flot charts -->
-    <script src="js/flot/jquery.flot.js"></script>
-    <script src="js/flot/jquery.flot.resize.min.js"></script>
+  <!--   <script src="js/flot/jquery.flot.js"></script>
+    <script src="js/flot/jquery.flot.resize.min.js"></script> -->
 
     <!-- Calendar Js -->
-    <script src="js/fullcalendar.js"></script>
+    <!-- <script src="js/fullcalendar.js"></script> -->
 
     <!-- Tiny Scrollbar JS -->
-    <script src="js/tiny-scrollbar.js"></script>
+    <!-- <script src="js/tiny-scrollbar.js"></script> -->
 
     <!-- custom Js -->
     <script src="js/custom-index.js"></script>
     <script src="js/custom.js"></script>
+    
   </body>
 </html>
