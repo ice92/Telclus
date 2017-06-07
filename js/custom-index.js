@@ -8,9 +8,11 @@ function socialGraph(){
       {value: data1, label: 'Bronze'},
       {value: data2, label: 'Silver'},
       {value: data3, label: 'Gold'},
-      {value: data4, label: 'Platinum'}
+      {value: data4, label: 'Platinum'},
+      {value: data5, label: 'Apartemen'},
+      {value: data6, label: 'No Data'}
     ],
-    colors: ['#d4a76b', '#867f79', '#ffbf00', '#b5d9d6'],
+    colors: ['#d4a76b', '#867f79', '#ffbf00', '#b5d9d6','#5b6c00','#fafafa'],
     labelColor: '#0b62a4',
     formatter: function (x) { return x + "%"}
   });
@@ -66,6 +68,8 @@ function callback(data){
     data2=+data[1];
     data3=+data[2];
     data4=+data[3];
+    data5=+data[4];
+    data6=+data[5];
     // alert(data[2]) ;
 }
 

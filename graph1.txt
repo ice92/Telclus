@@ -10,6 +10,10 @@
                       Gold Cluster </p>
                       <p><span class="label input-bottom-margin" style="background:#b5d9d6;height:10px;width:8px;"> </span>
                       Platinum Cluster</p>
+                      <p><span class="label input-bottom-margin" style="background:#5b6c00;height:10px;width:8px;"> </span>
+                      Apartemen Cluster</p>
+                      <p><span class="label input-bottom-margin" style="background:#fafafa;height:10px;width:8px;"> </span>
+                      No Data</p>
                       
                     </div>
                     <div id="profile" class="tab-pane fade">

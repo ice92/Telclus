@@ -6,6 +6,7 @@ $bsql= "SELECT count(*) FROM clustel where TIPERUMAH='Sangat Sederhana'";
 $ssql= "SELECT count(*) FROM clustel where TIPERUMAH='Sederhana'";
 $gsql= "SELECT count(*) FROM clustel where TIPERUMAH='Menengah'";
 $psql= "SELECT count(*) FROM clustel where TIPERUMAH='Mewah'";
+$asql= "SELECT count(*) FROM clustel where TIPERUMAH='Apartemen'";
 
 
 $result=$db->query($tsql);
@@ -28,7 +29,12 @@ $result=$db->query($psql);
 $row = $result->fetchArray(SQLITE3_ASSOC);
 $platinum = round($row["count(*)"]/$total*100,2);
 
-$data=array($bronze,$silver,$gold,$platinum);
+$result=$db->query($asql);
+$row = $result->fetchArray(SQLITE3_ASSOC);
+$apartemen = round($row["count(*)"]/$total*100,2);
+$blank=100-($bronze+$silver+$gold+$platinum+$apartemen);
+
+$data=array($bronze,$silver,$gold,$platinum,$apartemen,$blank);
 // $bronzesql= "SELECT count(*) FROM clustel where TIPECLUSTER=/"sederhana/" ";
 // $result=$db->query($bronzesql);
 // $row = $result->fetchArray(SQLITE3_ASSOC);
