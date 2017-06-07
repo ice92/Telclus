@@ -33,7 +33,7 @@ $result=$db->query($asql);
 $row = $result->fetchArray(SQLITE3_ASSOC);
 $apartemen = round($row["count(*)"]/$total*100,2);
 $blank=100-($bronze+$silver+$gold+$platinum+$apartemen);
-
+$blank=round($blank,2);
 $data=array($bronze,$silver,$gold,$platinum,$apartemen,$blank);
 // $bronzesql= "SELECT count(*) FROM clustel where TIPECLUSTER=/"sederhana/" ";
 // $result=$db->query($bronzesql);
