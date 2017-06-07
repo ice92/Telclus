@@ -138,7 +138,7 @@
             <div class="span12">
               <div class="row-fluid">
 
-                <div class="span2">
+                <div class="span3">
 
                   <div class="widget less-bottom-margin widget-border">
                     <div class="widget-body">
@@ -211,7 +211,7 @@
                   
                 </div>
 
-                <div class="span10">
+                <div class="span9">
                   <div class="widget">
                     <div class="widget-body">
                       <iframe src="https://www.google.com/maps/d/embed?mid=<?php echo $_GET["link"]?>" width="100%"height="400"></iframe>

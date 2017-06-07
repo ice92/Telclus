@@ -2,9 +2,20 @@
                       <h3>
                         GRAFIK MARKET SHARE
                       </h3>
-                      <p class="no-margin">
-                        Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.prehenderit butcher retro keffiyeh dreamcatcher synth. Cosby Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure squid.Raw denim you probably haven't heard of them jean shorts Austin.
-                      </p>
+                      <p><span class="label input-bottom-margin" style="background:#ff0000;height:10px;width:8px;"> </span>
+                      Indihome Share </p>
+                      <p><span class="label input-bottom-margin" style="background:#44546a;height:10px;width:8px;"> </span>
+                      First Media Share </p>
+                      <p><span class="label input-bottom-margin" style="background:#68a19c;height:10px;width:8px;"> </span>
+                      MNC Play Share </p>
+                      <p><span class="label input-bottom-margin" style="background:#5e341c;height:10px;width:8px;"> </span>
+                      Indovision</p>
+                      <p><span class="label input-bottom-margin" style="background:#5b6c00;height:10px;width:8px;"> </span>
+                      Biz Net Share</p>
+                      <p><span class="label input-bottom-margin" style="background:#ffc000;height:10px;width:8px;"> </span>
+                      Next Media Share</p>
+                      <p><span class="label input-bottom-margin" style="background:#7030a0;height:10px;width:8px;"> </span>
+                      Lain Lain</p>
                     </div>
                     <div id="profile" class="tab-pane fade">
                       <p>
