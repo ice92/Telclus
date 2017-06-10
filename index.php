@@ -138,7 +138,7 @@
                   </div>
                 </div>
                 <div class="widget-body"> -->                
-                  <div id="socialGraph" style="height: 600px;"></div>
+                  <div id="socialGraph" style="height: 450px;"></div>
                 <!-- </div>
               </div> -->
             </div>

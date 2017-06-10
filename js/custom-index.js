@@ -21,17 +21,18 @@ function socialGraph1(){
   Morris.Donut({
     element: 'socialGraph',
     data: [
-      {value: 1, label: 'Indihome'},
-      {value: 1, label: 'First Media'},
-      {value: 1, label: 'MNC Play'},
-      {value: 1, label: 'Indovision'},
-      {value: 1, label: 'Biz Net'},
-      {value: 1, label: 'Nex Media'},
-      {value: 1, label: 'Lain Lain'}
+      {value: data1, label: 'Indihome'},
+      {value: data2, label: 'First Media'},
+      {value: data3, label: 'MNC Play'},
+      {value: data4, label: 'Indovision'},
+      {value: data5, label: 'Biz Net'},
+      {value: data6, label: 'Nex Media'},
+      {value: data7, label: 'Lain Lain'},
+      {value: data8, label: 'NO Data'}
     ],
-    colors: ['#ff0000', '#44546a', '#68a19c', '#5e341c', '#5b6c00', '#ffc000', '#7030a0'],
+    colors: ['#ff0000', '#44546a', '#68a19c', '#5e341c', '#5b6c00', '#ffc000', '#7030a0','#fafafa'],
     labelColor: '#0b62a4',
-    formatter: function (x) { return x + "%"}
+    formatter: function (x) { return x + " RW"}
   });
 }function socialGraph2(){
   Morris.Donut({
@@ -60,7 +61,6 @@ function socialGraph1(){
   });
 }
 
-var data1,data2,data3,data4;
 
 function callback(data){ 
     data=JSON.parse(data); 
@@ -70,6 +70,8 @@ function callback(data){
     data4=+data[3];
     data5=+data[4];
     data6=+data[5];
+    data7=+data[6];
+    data8=+data[7];
     // alert(data[2]) ;
 }
 

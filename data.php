@@ -171,48 +171,7 @@ while ($row = $result->fetchArray(SQLITE3_ASSOC)){
                           <td class="hidden-phone">'.$row['PEKERJAANMAYORITAS'].'</td>'.'</td>
                           <td>                            
                                 <a href="#accSettings'.$row['NO'].'" data-toggle="modal" class="btn" data-original-title="Detail" href="#"><i class="icon-search"></i></a>
-                                <a href="#accSettings2" data-toggle="modal" class="btn" data-original-title="Insert" href="#"><i class="icon-pencil"></i></a>
-                                <a class="btn delete-row" data-original-title="Delete" href="#"><i class="icon-trash"></i></a>
-                              <div id="accSettings2" class="modal hide fade" tabindex="-2" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
-                              <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                                  ×
-                                </button>
-                                <h4 id="myModalLabel2">
-                                  Edit client details
-                                </h4>
-                              </div>
-                              <div class="modal-body">
-                                <div class="row-fluid">  
-                                  <div class="span4">
-                                    <input type="text" class="span12" placeholder="Frist name">
-                                  </div>
-                                  <div class="span4">
-                                    <input type="text" class="span12" placeholder="Last name">
-                                  </div>
-                                  <div class="span4">
-                                    <input type="text" class="span12" placeholder="email">
-                                  </div>
-                                </div>
-                                <div class="row-fluid">  
-                                  <div class="span4">
-                                    <input type="text" class="span12" placeholder="Contact">
-                                  </div>
-                                  <div class="span8">
-                                    <input type="text" class="span12" placeholder="Address">
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="modal-footer">
-                                <button class="btn" data-dismiss="modal" aria-hidden="true">
-                                  Close
-                                </button>
-                                <button class="btn btn-primary">
-                                  Save changes
-                                </button>
-                              </div>
-                            </div>
-
+                                
                              <div id="accSettings'.$row['NO'].'" class="modal hide fade" tabindex="-2" role="dialog" aria-labelledby="myModalLabel'.$row['NO'].'" aria-hidden="true">
                               <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
@@ -257,6 +216,8 @@ while ($row = $result->fetchArray(SQLITE3_ASSOC)){
                                         </tr>                                        
                                       </tbody>
                                     </table>
+                                    <br><br><br><br>
+                                    </br></br></br></br>
                                     <p>Sumber:</p>
                                     <ol class="no-margin">
                                       <li>
@@ -299,44 +260,47 @@ while ($row = $result->fetchArray(SQLITE3_ASSOC)){
                                         <tr>
                                           <td>Kompetitor</td>                                          
                                           <td colspan="3">'.$row['KOMPETITOR'].'</td>
-                                        </tr>                                        
+                                        </tr> 
+                                             <tr>
+                                          <td>Pelanggan</td>                                          
+                                          <td colspan="3">1P='.$row['1P'].'
+                                                     </br>2P='.$row['2P'].'
+                                                     </br>3P='.$row['3P'].'
+                                          </td>
+                                        </tr>                                   
                                       </tbody>
                                     </table>
                                     </br> 
                                     <table class="table table-bordered table-striped no-margin">                    
                                       <tbody>
                                         <tr>
-                                          <td>Jml ODP</td>
-                                          <td colspan="3">'.$row['ODP'].'</td>
-                                        </tr>
-                                        <tr>
-                                          <td>Kapasitas</td>                                          
-                                          <td colspan="3">'.$row['KAPASITAS'].'</td>
-                                        </tr>
-                                        <tr>
-                                          <td>Available</td>                                          
-                                          <td colspan="3">'.$row['AVAILABLE'].'</td>
-                                        </tr>
-                                        <tr>
-                                          <td>Occ ODP</td>                                          
-                                          <td colspan="3">0%-20%='.$row['ACCODP0%-20%'].'
-                                                     </br>20%-50%='.$row['ACCODP20%-50%'].'
-                                                     </br>50%-80%='.$row['ACCODP50%-80%'].'
-                                                     </br>80%-100%='.$row['ACCODP80%-100%'].'
+                                          <td>1P</td>
+                                          <td colspan="3">COPPER='.$row['COPPER'].'
+                                                     </br>GPON='.$row['GPON'].'
+                                                     </br>MSAN='.$row['MSAN'].'
                                           </td>
                                         </tr>
                                         <tr>
-                                          <td>Kompetitor</td>                                          
-                                          <td colspan="3">'.$row['KOMPETITOR'].'</td>
-                                        </tr>                                        
+                                          <td>2P</td>
+                                          <td colspan="3">GPON='.$row['GPON'].'
+                                                     </br>MASAN='.$row['MSAN'].'
+                                                    
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td>3P</td>
+                                          <td colspan="3">GPON='.$row['GPON'].'
+                                                     </br>MSAN='.$row['MSAN'].'
+                                          </td>
+                                        </tr>                                     
                                       </tbody>
                                     </table>  
                                     </br>  
                                     <table class="table table-bordered table-striped no-margin">                    
                                       <tbody>
                                         <tr>
-                                          <td>Jml ODP</td>
-                                          <td colspan="3">'.$row['ODP'].'</td>
+                                          <td>Revenue</td>
+                                          <td colspan="3">'.$row['REVENUE'].'</td>
                                         </tr>                                                                         
                                       </tbody>
                                     </table>                                  
@@ -348,7 +312,10 @@ while ($row = $result->fetchArray(SQLITE3_ASSOC)){
                                     <a href="photos/'.$row['GAMBAR'].'" class="thumbnail">
                                         <img alt="359x252" style="width: 359px; height: 252px;"src="photos/'.$row['GAMBAR'].'">
                                     </a>
-                                    <p>'.$row['KETERANGAN'].'</p>
+                                   </br>
+                                     <p>Keterangan : </p>
+                                     <p>  '.$row['KETERANGAN'].'</p>
+                                    
                                   </div>                                 
                                 </div>                                
                               </div>                              
