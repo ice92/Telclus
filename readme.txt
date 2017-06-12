@@ -9,7 +9,7 @@ Last Updated : 10 June 2017
 Morris/donut graph files
 view=index.php
 js=custom-index.js
-data=custom-index.js,index.php,getdata.php,getdata2.php
+data and query=custom-index.js,index.php,getdata.php,getdata2.php
 
 //password construction
 type:static passcode

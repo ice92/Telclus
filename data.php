@@ -72,7 +72,7 @@
             </a>
           </li>
           <li>
-            <a href="map.php?link=17zvrwcqkUhUMR79ZCgWab1vorAs&s=1">
+            <a href="map.php?link=1A-eyk6-2FB19Tr_qQSKROEEpisM&s=1">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe0c2;"></span>
               </div>
@@ -109,7 +109,7 @@
                       <a href="data.php">Data</a>
                     </li>
                     <li>
-                      <a href="map.php?link=17zvrwcqkUhUMR79ZCgWab1vorAs&s=1">Maps</a>
+                      <a href="map.php?link=1A-eyk6-2FB19Tr_qQSKROEEpisM&s=1">Maps</a>
                     </li>                    
                   </ul>
                 </div>
@@ -148,11 +148,12 @@
                           <th style="width:20%">Cluster</th>
                           <th style="width:10%" class="hidden-phone">Type Cluster</th>
                           <th style="width:15%" class="hidden-phone">Kompetitor</th>
-                          <th style="width:18%" class="hidden-phone">Kegiatan Rutin</th>
+                          <th style="width:23%" class="hidden-phone">Kegiatan Rutin</th>
                           <th style="width:15%" class="hidden-phone">Occupancy</th>                          
-                          <th style="width:12%" >Actions</th>
+                          <th style="width:7%" >Actions</th>
                         </tr>
                       </thead>
+                      <!-- <i class="icon-search"></i> -->
                       <tbody class="modal-body">                     
                       
 <?php
@@ -170,7 +171,7 @@ while ($row = $result->fetchArray(SQLITE3_ASSOC)){
                           <td class="hidden-phone">'.$row['KEGIATANRUTIN'].'</td>
                           <td class="hidden-phone">'.$row['PEKERJAANMAYORITAS'].'</td>'.'</td>
                           <td>                            
-                                <a href="#accSettings'.$row['NO'].'" data-toggle="modal" class="btn" data-original-title="Detail" href="#"><i class="icon-search"></i></a>
+                                <a href="#accSettings'.$row['NO'].'" data-toggle="modal" class="btn btn-danger" href="#">Detail</a>
                                 
                              <div id="accSettings'.$row['NO'].'" class="modal hide fade" tabindex="-2" role="dialog" aria-labelledby="myModalLabel'.$row['NO'].'" aria-hidden="true">
                               <div class="modal-header">

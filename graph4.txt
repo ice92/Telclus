@@ -2,9 +2,14 @@
                       <h3>
                         GRAFIK CLUSTER / OCCUPANCY ODP
                       </h3>
-                      <p class="no-margin">
-                        Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.prehenderit butcher retro keffiyeh dreamcatcher synth. Cosby Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure squid.Raw denim you probably haven't heard of them jean shorts Austin.
-                      </p>
+                      <p><span class="label input-bottom-margin" style="background:#00b050;height:10px;width:8px;"> </span>
+                      0%-20%</p>
+                      <p><span class="label input-bottom-margin" style="background:#ffff00;height:10px;width:8px;"> </span>
+                      20%-50% </p>
+                      <p><span class="label input-bottom-margin" style="background:#ed7d31;height:10px;width:8px;"> </span>
+                      50%-80% </p>
+                      <p><span class="label input-bottom-margin" style="background:#002060;height:10px;width:8px;"> </span>
+                      80%-100% </p>
                     </div>
                     <div id="profile" class="tab-pane fade">
                       <p>

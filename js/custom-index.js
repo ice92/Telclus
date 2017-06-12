@@ -26,7 +26,7 @@ function socialGraph1(){
       {value: data3, label: 'MNC Play'},
       {value: data4, label: 'Indovision'},
       {value: data5, label: 'Biz Net'},
-      {value: data6, label: 'Nex Media'},
+      {value: data6, label: 'Next Media'},
       {value: data7, label: 'Lain Lain'},
       {value: data8, label: 'NO Data'}
     ],

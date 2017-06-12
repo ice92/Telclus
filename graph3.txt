@@ -2,9 +2,13 @@
                       <h3>
                         GRAFIK PELANGGAN
                       </h3>
-                      <p class="no-margin">
-                        Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.prehenderit butcher retro keffiyeh dreamcatcher synth. Cosby Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure squid.Raw denim you probably haven't heard of them jean shorts Austin.
-                      </p>
+                      <p><span class="label input-bottom-margin" style="background:#d4a76b;height:10px;width:8px;"> </span>
+                      1P </p>
+                      <p><span class="label input-bottom-margin" style="background:#867f79;height:10px;width:8px;"> </span>
+                      2P </p>
+                      <p><span class="label input-bottom-margin" style="background:#ffbf00;height:10px;width:8px;"> </span>
+                      3P </p>
+                      
                     </div>
                     <div id="profile" class="tab-pane fade">
                       <p>

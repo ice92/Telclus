@@ -74,7 +74,7 @@
           </li>
           <li class="active">
               <span class="current-arrow"></span>
-            <a href="map.php?link=17zvrwcqkUhUMR79ZCgWab1vorAs&s=1">
+            <a href="map.php?link=1A-eyk6-2FB19Tr_qQSKROEEpisM&s=1">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe0c2;"></span>
               </div>
@@ -111,7 +111,7 @@
                         <a href="data.php">Data</a>
                     </li>
                     <li>
-                        <a href="map.php?link=17zvrwcqkUhUMR79ZCgWab1vorAs&s=1">Maps</a>
+                        <a href="map.php?link=1A-eyk6-2FB19Tr_qQSKROEEpisM&s=1">Maps</a>
                     </li>                    
                   </ul>
                 </div>
@@ -142,7 +142,7 @@
 
                   <div class="widget less-bottom-margin widget-border">
                     <div class="widget-body">
-                    <a href="map.php?link=1TMp85v2XGO5JF8T4v_gCQYpKXSU&s=1">
+                    <a href="map.php?link=1A-eyk6-2FB19Tr_qQSKROEEpisM&s=1">
                       <div class="current-stats">
                         <h4 class="<?php if($_GET["s"]=='1')echo "text-error";?>">CEMPAKA PUTIH</h4>                        
                         <div class="type">
@@ -155,7 +155,7 @@
 
                   <div class="widget less-bottom-margin widget-border">
                     <div class="widget-body">
-                    <a href="map.php?link=1NrlTkV-N_GvPu7tfbi4uj6Fdn18&s=2">
+                    <a href="map.php?link=1oB_VZP0xCR9LxepXQJL4D6w-oDo&s=2">
                       <div class="current-stats">
                         <h4 class="<?php if($_GET["s"]=='2')echo "text-error";?>">CIDENG</h4>
                         
@@ -183,7 +183,7 @@
 
                   <div class="widget less-bottom-margin widget-border">
                     <div class="widget-body">
-                    <a href="map.php?link=1kGw2UcBNhCOhR4-70ji4t2Ac1c8&s=4">
+                    <a href="map.php?link=1NyIiRLZj9X240oAhlen0iUZTkHo&s=4">
                       <div class="current-stats">
                         <h4 class="<?php if($_GET["s"]=='4')echo "text-error";?>">GAMBIR</h4>
                         

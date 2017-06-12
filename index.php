@@ -70,7 +70,7 @@
             </a>
           </li>
           <li>
-            <a href="map.php?link=17zvrwcqkUhUMR79ZCgWab1vorAs&s=1">
+            <a href="map.php?link=1A-eyk6-2FB19Tr_qQSKROEEpisM&s=1">
               <div class="icon">
                 <span class="fs1" aria-hidden="true" data-icon="&#xe0c2;"></span>
               </div>
@@ -108,7 +108,7 @@
                       <a href="data.php">Data</a>
                     </li>
                     <li>
-                      <a href="map.php?link=17zvrwcqkUhUMR79ZCgWab1vorAs&s=1">Maps</a>
+                      <a href="map.php?link=1A-eyk6-2FB19Tr_qQSKROEEpisM&s=1">Maps</a>
                     </li>                    
                   </ul>
                 </div>
