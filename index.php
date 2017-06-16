@@ -131,113 +131,102 @@
           <div class="row-fluid">
             
             <div class="span6">
-      <!--         <div class="widget">
+              <div class="widget">
                 <div class="widget-header">
                   <div class="title">
-                    Tipe Cluster
+                    Cluster Type Graph
                   </div>
                 </div>
-                <div class="widget-body"> -->                
-                  <div id="socialGraph" style="height: 450px;"></div>
-                <!-- </div>
-              </div> -->
+                <div class="widget-body">                
+                <div class="row-fluid">
+                  <div class="span7" id="pie_chart1"></div>
+                  <div class="stylish-lists span5">
+                  <h4>About Graph</h4>
+                  <p>Menampilkan persentase tipe cluster yang ada di Witel Jakarta Pusat</p>                      
+                        <ul >
+                                      <li>
+                                        Platinum : Mewah - Tingkat 2, modis terawat | Tingkat 1, modis terawat, luas >200 m2
+                                      </li>
+                                      <li>
+                                        Gold : Menengah - Tingkat 2, lumayan luas, dempet
+                                      </li>
+                                      <li>
+                                        Silver : Tingkat 1, sempit, dempet | Tingkat 2 dempet, sempit, semi-permanen
+                                      </li>
+                                      <li>
+                                        Bronze : Tingkat 1, semi-permanen, gang
+                                      </li>                                      
+                                    </ul>   
+
+                  </div>
+                </div>
+                </div>
+              </div>
             </div>
             <div class="span6">
               <div class="widget">
                 <div class="widget-header">
                   <div class="title">
-                    <span class="fs1" aria-hidden="true" data-icon="&#xe13c;"></span> Pilih Grafik
+                    Market Share Graph
                   </div>
                 </div>
-                <div class="widget-body">
-                  <a class="quick-action-btn span3 input-bottom-margin" onclick="aza('getdata.php',1);">
-                    <span class="fs1" aria-hidden="true" data-icon="&#xe003;"></span> 
-                    <p class="no-margin">Tipe Cluster</p>
-                    
-                  </a>
-                  <a class="quick-action-btn span3 input-bottom-margin" onclick="aza('getdata2.php',2);">
-                    <span class="fs1" aria-hidden="true" data-icon="&#xe1cd;"></span> 
-                    <p class="no-margin">Market Share</p>
-                    
-                  </a>
-                  <a class="quick-action-btn span3 input-bottom-margin" onclick="aza('getdata2.php',3);">
-                    <span class="fs1" aria-hidden="true" data-icon="&#xe071;"></span> 
-                    <p class="no-margin">Pelanggan</p>
-                    
-                  </a>
-                  <a class="quick-action-btn span3 input-bottom-margin" onclick="aza('getdata2.php',4);">
-                    <span class="fs1" aria-hidden="true" data-icon="&#xe01e;"></span> 
-                    <p class="no-margin">Occupancy ODP</p>
-                    
-                  </a>                  
-                  <div class="clearfix"></div>
-                </div>
-              </div>
-            <div class="widget">
-                <div class="widget-header">
-                  <div class="title">
-                    <span class="fs1" aria-hidden="true" data-icon="&#xe0b6;"></span> Penjelasan
+                <div class="widget-body">                
+                <div class="row-fluid">
+                  <div class="span7" id="pie_chart2"></div>
+                  <div class="stylish-lists span5">
+                  <h4>About Graph</h4>
+                  <p>
+                        Menampilkan market share Indihome dengan kompetitor di Witel Jakarta Pusat.
+                      </p>
                   </div>
                 </div>
-                <div class="widget-body">
-                  <ul class="nav nav-tabs no-margin myTabBeauty">
-                    <li class="active">
-                      <a data-toggle="tab" href="#home">
-                        Legenda
-                      </a>
-                    </li>
-                    <li class="">
-                      <a data-toggle="tab" href="#profile">
-                        Tentang Grafik
-                      </a>
-                    </li>
-                  </ul>
-                  <div class="tab-content" id="myTabContent">                  
-                    
-                  </div>
                 </div>
               </div>
             </div>
-            <!-- <div class="span6">
-              <div class="widget">
-                <div class="widget-header">
-                  <div class="title">
-                    Market Share
-                  </div>
-                </div>
-                <div class="widget-body">
-                  <div id="socialGraph1" style="height: 320px;"></div>
-                </div>
-              </div>
-            </div> -->
-          </div>
-          <!-- <div class="row-fluid">
-            <div class="span6">
-              <div class="widget">
-                <div class="widget-header">
-                  <div class="title">
-                    Pelanggan
-                  </div>
-                </div>
-                <div class="widget-body">
-                  <div id="socialGraph2" style="height: 320x;"></div>
-                </div>
-              </div>
             </div>
+            <div class="row-fluid">
             
             <div class="span6">
               <div class="widget">
                 <div class="widget-header">
                   <div class="title">
-                    Cluster / Occupancy ODP
+                    Customer Data Graph
                   </div>
                 </div>
-                <div class="widget-body">
-                  <div id="socialGraph3" style="height: px;"></div>
+                <div class="widget-body">                
+                <div class="row-fluid">
+                  <div class="span8" id="pie_chart3"></div>
+                  <div class="stylish-lists span4">
+                  <h4>About Graph</h4>
+                  <p>
+                        Menampilkan persentase pelanggan di Witel Jakarta Pusat.
+                  </p>                   
+                  </div>
+                </div>
                 </div>
               </div>
             </div>
-          </div> -->
+            <div class="span6">
+              <div class="widget">
+                <div class="widget-header">
+                  <div class="title">
+                    Occupancy ODP Graph
+                  </div>
+                </div>
+                <div class="widget-body">                
+                <div class="row-fluid">
+                  <div class="span8" id="pie_chart4"></div>
+                  <div class="stylish-lists span4">
+                  <h4>About Graph</h4>
+                  <p>
+                        Menampilkan persentase cluster berdasarkan rata2 occupany ODP di cluster tersebut.
+                  </p> 
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            </div>
         </div><!-- main container-->
       </div><!-- dashboard-wrapper -->
     <footer>
@@ -249,12 +238,24 @@
     <script src="js/jquery-ui-1.8.23.custom.min.js"></script>
 
     <!-- morris charts -->
-    <script src="js/morris/morris.js"></script>
+<!--     <script src="js/morris/morris.js"></script>
     <script src="js/morris/raphael-min.js"></script>
-
+ -->
     <!-- Flot charts -->
-  <!--   <script src="js/flot/jquery.flot.js"></script>
-    <script src="js/flot/jquery.flot.resize.min.js"></script> -->
+    <script src="js/flot/jquery.flot.js"></script>
+    <script src="js/flot/jquery.flot.selection.js"></script>
+    <script src="js/flot/jquery.flot.resize.min.js"></script>
+    <!-- Google Visualization JS -->
+<!--Load the AJAX API-->
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+
+  // Load the Visualization API library and the piechart library.
+  google.load('visualization', '1.0', {'packages':['corechart']});
+  // google.setOnLoadCallback(drawChart);
+     // ... draw the chart...
+</script>
+
 
     <!-- Calendar Js -->
     <!-- <script src="js/fullcalendar.js"></script> -->
