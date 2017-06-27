@@ -157,7 +157,15 @@
                       <tbody class="modal-body">                     
                       
 <?php
-$db=new SQLite3('cluster.db');
+class MyDB extends SQLite3
+{
+  function __construct()
+  {
+  $this->open('cluster.db');
+  }
+}
+
+$db=new MyDB();
 $sql= "SELECT * FROM clustel ";
 $result=$db->query($sql);
 $idcluster=array();
@@ -171,8 +179,8 @@ while ($row = $result->fetchArray(SQLITE3_ASSOC)){
                           <td class="hidden-phone">'.$row['KEGIATANRUTIN'].'</td>
                           <td class="hidden-phone">'.$row['PEKERJAANMAYORITAS'].'</td>'.'</td>
                           <td>                            
-                                <a href="#accSettings'.$row['NO'].'" data-toggle="modal" class="btn btn-danger" href="#">Detail</a>
-                                
+                            <a href="#accSettings'.$row['NO'].'" data-toggle="modal" class="btn btn-danger" href="#">Detail</a>  
+                                                          
                              <div id="accSettings'.$row['NO'].'" class="modal hide fade" tabindex="-2" role="dialog" aria-labelledby="myModalLabel'.$row['NO'].'" aria-hidden="true">
                               <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
@@ -316,6 +324,65 @@ while ($row = $result->fetchArray(SQLITE3_ASSOC)){
                                    </br>
                                      <p>Keterangan : </p>
                                      <p>  '.$row['KETERANGAN'].'</p>
+                                     <form action="data.php" method="GET">
+                                     <input type="text" name="id" class="hidden" value="'.$row['NO'].'"></input>
+                                    <select name="col"  class="span12 input-left-top-margins">
+                                      <option>
+                                        Choose column to update
+                                      </option>
+                                      <option value="JUMLAHRT">
+                                        Jml RT
+                                      </option>
+                                      <option value="JUMLAHKK">
+                                        Jml KK
+                                      </option>
+                                      <option value="JUMLAHPENDUDUK">
+                                        Jml Penduduk
+                                      </option>
+                                      <option value="PEKERJAANMAYORITAS">
+                                        Profesi
+                                      </option>
+                                      <option value="TIPERUMAH">
+                                        Tipe Rumah
+                                      </option>
+                                      <option value="KEGIATANRUTIN">
+                                        Kegiatan
+                                      </option>
+                                      <option value="PIC">
+                                        Influencer
+                                      </option>
+                                      <option value="ODP">
+                                        Jml ODP
+                                      </option>
+                                      <option value="KAPASITAS">
+                                        Kapasitas
+                                      </option>
+                                      <option value="AVAILABLE">
+                                        Available
+                                      </option>
+                                      <option value="ACCODP0%-20%">
+                                        Occ ODP 0%-20%
+                                      </option>
+                                      <option value="ACCODP20%-50%">
+                                        Occ ODP 20%-50%
+                                      </option>
+                                      <option value="ACCODP50%-80%">
+                                        Occ ODP 50%-80%
+                                      </option>
+                                      <option value="ACCODP80%-100%">
+                                        Occ ODP 80%-100%
+                                      </option>
+                                      <option value="KOMPETITOR">
+                                        Kompetitor
+                                      </option>
+                                    </select>
+                                     <textarea class="input-block-level no-margin" name="val" placeholder="New Value"></Textarea>
+                                     <button class="btn btn-success" type="submit">Update</button>
+                                     </form>
+                                  </div>                                 
+                                </div>                                
+                              </div>                              
+                            </div>                           
                                     
                                   </div>                                 
                                 </div>                                
@@ -326,6 +393,16 @@ while ($row = $result->fetchArray(SQLITE3_ASSOC)){
 
 }
 
+  if(isset($_GET['id']))
+  {
+  $queryupdate='UPDATE clustel SET '.$_GET["col"].'='.$_GET["val"].' WHERE NO="'.$_GET["id"].'";';
+  $ret = $db->exec($queryupdate);
+  if(!$ret){
+    echo $db->lastErrorMsg();
+    } else {
+    echo $db->changes(), " Record updated successfully\n";
+    }
+  }
 unset($db);
 
 ?>                                                
