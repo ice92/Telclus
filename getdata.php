@@ -15,24 +15,24 @@ $total = $row["count(*)"];
 
 $result=$db->query($bsql);
 $row = $result->fetchArray(SQLITE3_ASSOC);
-$bronze = round($row["count(*)"]/$total*100,2);
+$bronze = round($row["count(*)"],2);
 
 $result=$db->query($ssql);
 $row = $result->fetchArray(SQLITE3_ASSOC);
-$silver = round($row["count(*)"]/$total*100,2);
+$silver = round($row["count(*)"],2);
 
 $result=$db->query($gsql);
 $row = $result->fetchArray(SQLITE3_ASSOC);
-$gold = round($row["count(*)"]/$total*100,2);
+$gold = round($row["count(*)"],2);
 
 $result=$db->query($psql);
 $row = $result->fetchArray(SQLITE3_ASSOC);
-$platinum = round($row["count(*)"]/$total*100,2);
+$platinum = round($row["count(*)"],2);
 
 $result=$db->query($asql);
 $row = $result->fetchArray(SQLITE3_ASSOC);
-$apartemen = round($row["count(*)"]/$total*100,2);
-$blank=100-($bronze+$silver+$gold+$platinum+$apartemen);
+$apartemen = round($row["count(*)"],2);
+$blank=$total-($bronze+$silver+$gold+$platinum+$apartemen);
 $blank=round($blank,2);
 $data=array($bronze,$silver,$gold,$platinum,$apartemen,$blank);
 // $bronzesql= "SELECT count(*) FROM clustel where TIPECLUSTER=/"sederhana/" ";
